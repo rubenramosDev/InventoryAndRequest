@@ -1,0 +1,29 @@
+.border-pane {
+    -fx-background-color: #fff;
+}
+
+.tab-header-background {
+    -fx-background-color: #f4f5f7;
+}
+
+.tab:hover {
+    -fx-background-color: #f1f1f1;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-border-color: cornflowerblue;
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler {
+    -jfx-rippler-fill: #495260;
+}
+
+.jfx-tab-pane .tab .tab-selected {
+    -fx-background-color: #495260;
+}
+
+.jfx-tab-pane .tab .tab-label {
+    -fx-font-weight: normal;
+    -fx-text-fill: #495260;
+    -fx-font-size: 18;
+}

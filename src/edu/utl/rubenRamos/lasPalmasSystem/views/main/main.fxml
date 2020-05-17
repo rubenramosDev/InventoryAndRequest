@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="main-window" stylesheets="@../../static/css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.MainController">
+    <center>
+
+    </center>
+    <center>
+
+    </center>
+    <left>
+        <AnchorPane minHeight="600.0" minWidth="158.0" style="-fx-background-color: #fff;">
+            <children>
+                <AnchorPane id="user-space" minHeight="120.0" minWidth="158.0" styleClass="user-space" stylesheets="@../../static/css/side-bar-styles.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="120.0" prefWidth="158.0" style="-fx-background-radius: 13;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <children>
+                                <AnchorPane prefHeight="73.0" prefWidth="60.0">
+                                    <children>
+                                        <Circle fill="#009688" layoutX="26.0" layoutY="26.0" radius="19.0" stroke="TRANSPARENT" strokeType="INSIDE" AnchorPane.topAnchor="30.0" />
+                                        <Text fx:id="txtInicial" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="I" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="30.0">
+                                            <font>
+                                                <Font name="Roboto Regular" size="34.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="95.0">
+                                    <children>
+                                        <Text fx:id="txtUser" fill="#495260" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario">
+                                            <font>
+                                                <Font name="Roboto Regular" size="16.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </Text>
+                                        <HBox alignment="CENTER_LEFT">
+                                            <children>
+                                                <Circle fill="#48ff1f" radius="3.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                                                <Text fill="#48ff1f" strokeType="OUTSIDE" strokeWidth="0.0" text="En línea">
+                                                    <font>
+                                                        <Font name="Roboto Regular" size="9.0" />
+                                                    </font>
+                                                    <HBox.margin>
+                                                        <Insets left="10.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                        <Text fx:id="txtPermisos" fill="#495260" strokeType="OUTSIDE" strokeWidth="0.0" text="Permisos">
+                                            <VBox.margin>
+                                                <Insets top="4.0" />
+                                            </VBox.margin>
+                                            <font>
+                                                <Font name="Roboto Regular" size="13.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets left="10.0" />
+                                    </HBox.margin>
+                                </VBox>
+                            </children>
+                            <padding>
+                                <Insets left="9.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </AnchorPane>
+                <VBox prefHeight="590.0" prefWidth="158.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="5.0">
+                    <children>
+                        <AnchorPane>
+                            <children>
+                                <JFXButton fx:id="btnPedidos" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Pedidos" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                                    <graphic>
+                                        <AnchorPane>
+                                            <children>
+                                                <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../static/images/file.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                            <padding>
+                                                <Insets right="25.0" />
+                                            </padding>
+                                        </AnchorPane>
+                                    </graphic>
+                                    <font>
+                                        <Font name="Muli SemiBold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="12.0" right="4.0" top="6.0" />
+                                    </padding>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane>
+                            <VBox.margin>
+                                <Insets left="4.0" right="1.0" />
+                            </VBox.margin>
+                            <children>
+                                <JFXButton fx:id="btnArticulos" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Artículos" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                                    <graphic>
+                                        <AnchorPane>
+                                            <children>
+                                                <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../static/images/fork.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                            <padding>
+                                                <Insets right="25.0" />
+                                            </padding>
+                                        </AnchorPane>
+                                    </graphic>
+                                    <font>
+                                        <Font name="Muli SemiBold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="8.0" right="4.0" top="6.0" />
+                                    </padding>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane>
+                            <children>
+                                <JFXButton fx:id="btnCliente" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Clientes" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                                    <graphic>
+                                        <AnchorPane>
+                                            <children>
+                                                <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../static/images/client.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                            <padding>
+                                                <Insets right="25.0" />
+                                            </padding>
+                                        </AnchorPane>
+                                    </graphic>
+                                    <font>
+                                        <Font name="Muli SemiBold" size="18.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="12.0" right="4.0" top="6.0" />
+                                    </padding>
+                                </JFXButton>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+
+    </left>
+</BorderPane>

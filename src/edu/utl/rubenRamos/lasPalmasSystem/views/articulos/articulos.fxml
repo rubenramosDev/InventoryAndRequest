@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="splitPaneArticulos" dividerPositions="0.5" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.articulo.ArticuloController">
+    <items>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <JFXTextField fx:id="txtNombre" focusColor="#009688" labelFloat="true" layoutX="20.0" layoutY="30.0" prefHeight="44.0" prefWidth="304.0" promptText="Nombre *" unFocusColor="#495260" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                    <font>
+                        <Font name="Roboto Regular" size="16.0" />
+                    </font>
+                </JFXTextField>
+                <HBox layoutX="27.0" layoutY="88.0" prefHeight="44.0" prefWidth="304.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+                    <children>
+                        <JFXTextField fx:id="txtPrecioUnitario" focusColor="#009688" labelFloat="true" prefHeight="26.0" prefWidth="150.0" promptText="Precio unitario *" unFocusColor="#495260" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtPrecioFaltante" focusColor="#009688" labelFloat="true" prefHeight="26.0" prefWidth="150.0" promptText="Precio faltante *" unFocusColor="#495260" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutX="26.0" layoutY="155.0" prefHeight="44.0" prefWidth="271.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="155.0">
+                    <children>
+                        <JFXTextField fx:id="txtCantidad" focusColor="#009688" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Cantidad *" unFocusColor="#495260" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="comboCategoria" focusColor="#009688" labelFloat="true" prefHeight="29.0" prefWidth="150.0" promptText="Categoría *" unFocusColor="#495260" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                        </JFXComboBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="15.0" layoutY="323.0" minHeight="44.0" minWidth="286.0" spacing="15.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="10.0">
+                    <children>
+                        <JFXButton fx:id="btnDelete" buttonType="RAISED" prefHeight="43.0" prefWidth="94.0" ripplerFill="#c90404" styleClass="delete-button" stylesheets="@../../static/css/buttons.css" text="Eliminar" textFill="WHITE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="13.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnUpdate" buttonType="RAISED" prefHeight="43.0" prefWidth="94.0" styleClass="update-button" stylesheets="@../../static/css/buttons.css" text="Editar" textFill="#c9ab04" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCreate" buttonType="RAISED" prefHeight="43.0" prefWidth="94.0" styleClass="create-button" stylesheets="@../../static/css/buttons.css" text="Crear" textFill="WHITE" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="13.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="25.0" layoutY="199.0" prefHeight="100.0" prefWidth="286.0" spacing="30.0" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="199.0">
+                    <children>
+                        <ImageView fitHeight="105.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../static/images/fork.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton fx:id="btnLoadImage" prefHeight="43.0" prefWidth="94.0" ripplerFill="#088ea0" styleClass="confirm-button" stylesheets="@../../static/css/buttons.css" text="Cargar" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Regular" size="13.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+        </AnchorPane>
+      <BorderPane fx:id="borderPaneSide" prefHeight="200.0" prefWidth="200.0" />
+    </items>
+</SplitPane>

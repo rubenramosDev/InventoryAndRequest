@@ -1,0 +1,15 @@
+.list-cell:filled{
+    -fx-background-color: #fff;
+}
+
+
+.list-cell:selected{
+    -fx-background-color: #f1f1f1;
+}
+
+.list-cell:hover{
+-fx-background-color: #a2d8b8;
+}
+
+
+

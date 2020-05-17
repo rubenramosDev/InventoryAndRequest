@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane minHeight="100.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="6.0" minHeight="100.0" minWidth="600.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reservacion no. 1"/>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="225.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de inicio"/>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="aqui va la fecha de inicio"/>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de fin">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="aqui va la fecha de fin"/>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Monto">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="aqui va el monto"/>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aqui va la direccion"/>
+                    </children>
+                    <HBox.margin>
+                        <Insets top="-1.0"/>
+                    </HBox.margin>
+                </VBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="255.0">
+                    <children>
+                        <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="106.0" ripplerFill="WHITE"
+                                   styleClass="btn-confirm" stylesheets="@../static/css/buttons.css" text="Finalizar"
+                                   textFill="WHITE">
+                            <HBox.margin>
+                                <Insets right="15.0"/>
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="106.0" ripplerFill="WHITE"
+                                   styleClass="update-button" stylesheets="@../static/css/buttons.css" text="Editar"
+                                   textFill="WHITE">
+                            <HBox.margin>
+                                <Insets right="15.0"/>
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="106.0" ripplerFill="WHITE"
+                                   styleClass="consult-button" stylesheets="@../static/css/buttons.css" text="Finalizar"
+                                   textFill="WHITE"/>
+                    </children>
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

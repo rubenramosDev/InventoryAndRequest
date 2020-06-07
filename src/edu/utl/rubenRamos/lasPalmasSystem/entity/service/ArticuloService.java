@@ -2,37 +2,43 @@ package edu.utl.rubenRamos.lasPalmasSystem.entity.service;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.dao.ArticuloDao;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
+import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 
+import java.sql.SQLException;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class ArticuloService {
 
     private ArticuloDao articuloDao = new ArticuloDao();
 
-    public ArrayList<Articulo> getAllArticulo() {
-        return articuloDao.getAllArticulo();
+    public Boolean createArticulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, Integer idCategoria, String pathImage) {
+        try {
+            return articuloDao.createArticulo(new Articulo(nombre, precioUnitario, precioFaltante, cantidad, pathImage, idCategoria));
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
+            return false;
+        }
     }
 
-    public Articulo searchArticuloById(Integer idArticulo) {
-        return null;
+    public Boolean updateArticulo(Integer idArticulo, String nombre, Double precioUnitario, Double
+            precioFaltante, Integer cantidad, Integer idCategoria, String pathImage) {
+        try {
+            return articuloDao.updateArticulo(new Articulo(idArticulo, nombre, precioUnitario, precioFaltante, cantidad, pathImage, idCategoria));
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
+            return false;
+        }
     }
 
-    public ArrayList<Articulo> searchByQuery(String query) {
-        return null;
-    }
-
-    public String createArticulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String categoriaArticulo) {
-        // String response = articuloDao.createArticulo(new Articulo(nombre, precioUnitario, precioFaltante, cantidad, categoriaArticulo));
-        return "";
-    }
-
-    public String updateArticulo(Articulo articulo) {
-        return null;
-    }
-
-    public String deleteArticulo(Integer idArticulo) {
-        return null;
+    public Boolean deleteArticulo(Integer idArticulo) {
+        try {
+            return articuloDao.deleteArticulo(idArticulo);
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
+            return false;
+        }
     }
 }

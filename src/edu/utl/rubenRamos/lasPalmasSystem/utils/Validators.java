@@ -38,7 +38,7 @@ public class Validators {
         }
     }
 
-    public static void floatValidator(JFXTextField field) {
+    public static void doubleValidator(JFXTextField field) {
         field.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
@@ -53,7 +53,7 @@ public class Validators {
         });
     }
 
-    public static void floarValitadorList(List<JFXTextField> fields) {
+    public static void doubleValitadorList(List<JFXTextField> fields) {
         for (JFXTextField field : fields) {
             field.textProperty().addListener(new ChangeListener<String>() {
                 @Override
@@ -70,15 +70,11 @@ public class Validators {
         }
     }
 
-    public static boolean formNotNull(
-            List<JFXTextField> fields, String type,
-            Node window, String title, String message) {
+    public static boolean formNotNull(List<JFXTextField> fields) {
         for (JFXTextField field : fields) {
             if (field.getText().isEmpty()) {
-                ContextualWindow.contextualWindow(type, window, message, title);
-                break;
+                return false;
             }
-            return false;
         }
         return true;
     }

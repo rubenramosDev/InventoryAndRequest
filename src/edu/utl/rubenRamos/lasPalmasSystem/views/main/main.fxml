@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="main-window" stylesheets="@../../static/css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.MainController">
+<BorderPane fx:id="borderPaneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="main-window" stylesheets="@../../static/css/styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.main.MainController">
     <center>
 
     </center>
@@ -20,7 +20,7 @@
 
     </center>
     <left>
-        <AnchorPane minHeight="600.0" minWidth="158.0" style="-fx-background-color: #fff;">
+        <AnchorPane minHeight="600.0" minWidth="158.0" prefHeight="600.0" prefWidth="193.0" style="-fx-background-color: #fff;">
             <children>
                 <AnchorPane id="user-space" minHeight="120.0" minWidth="158.0" styleClass="user-space" stylesheets="@../../static/css/side-bar-styles.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
                     <children>
@@ -81,6 +81,58 @@
                 </AnchorPane>
                 <VBox prefHeight="590.0" prefWidth="158.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="5.0">
                     <children>
+                  <AnchorPane>
+                     <children>
+                        <JFXButton fx:id="btnPresupuesto1" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Tablero" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <AnchorPane>
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/images/dashboard.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </graphic>
+                           <font>
+                              <Font name="Muli SemiBold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" right="4.0" top="6.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <JFXButton fx:id="btnPresupuesto" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Presupuesto" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <AnchorPane>
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/images/file.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </graphic>
+                           <font>
+                              <Font name="Muli SemiBold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" right="4.0" top="6.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
                         <AnchorPane>
                             <children>
                                 <JFXButton fx:id="btnPedidos" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Pedidos" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
@@ -89,7 +141,7 @@
                                             <children>
                                                 <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
                                                     <image>
-                                                        <Image url="@../../static/images/file.png" />
+                                                        <Image url="@../../static/images/order.png" />
                                                     </image>
                                                 </ImageView>
                                             </children>
@@ -107,6 +159,32 @@
                                 </JFXButton>
                             </children>
                         </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <JFXButton fx:id="btnReservaciones" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Reservaciones" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <AnchorPane>
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/images/reservation.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </graphic>
+                           <font>
+                              <Font name="Muli SemiBold" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" right="4.0" top="6.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
                         <AnchorPane>
                             <VBox.margin>
                                 <Insets left="4.0" right="1.0" />
@@ -162,6 +240,58 @@
                                 </JFXButton>
                             </children>
                         </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <JFXButton fx:id="btnReportes" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Reportes" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <AnchorPane>
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/images/chart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </graphic>
+                           <font>
+                              <Font name="Muli SemiBold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" right="4.0" top="6.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane>
+                     <children>
+                        <JFXButton fx:id="btnUsuarios" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Usuarios" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <graphic>
+                              <AnchorPane>
+                                 <children>
+                                    <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../static/images/userlogin.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets right="25.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </graphic>
+                           <font>
+                              <Font name="Muli SemiBold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="12.0" right="4.0" top="6.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
                     </children>
                 </VBox>
             </children>

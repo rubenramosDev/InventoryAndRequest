@@ -10,7 +10,10 @@ public class Articulo {
     private Double precioFaltante;
     private Integer cantidad;
     private CategoriaArticulo categoriaArticulo;
+    private String pathImage;
+    private Boolean estatus;
     private String categoriArticuloNameTable;
+    private String categoriaArticuloFormaTable;
 
     public Articulo() {
     }
@@ -19,21 +22,33 @@ public class Articulo {
         this.idArticulo = idArticulo;
     }
 
-    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, Integer idCategoria, String categoriaArticulo) {
+    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoria, String nombreCategoria, String forma) {
         this.idArticulo = idArticulo;
         this.nombre = nombre;
         this.precioUnitario = precioUnitario;
         this.precioFaltante = precioFaltante;
         this.cantidad = cantidad;
-        this.categoriaArticulo = new CategoriaArticulo(idCategoria, categoriaArticulo);
+        this.pathImage = pathImage;
+        this.categoriaArticulo = new CategoriaArticulo(idCategoria, nombreCategoria, forma);
     }
 
-    public Articulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String categoriaArticulo) {
+    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoriaArticulo) {
+        this.idArticulo = idArticulo;
         this.nombre = nombre;
         this.precioUnitario = precioUnitario;
         this.precioFaltante = precioFaltante;
         this.cantidad = cantidad;
-        this.categoriaArticulo = new CategoriaArticulo(categoriaArticulo);
+        this.pathImage = pathImage;
+        this.categoriaArticulo = new CategoriaArticulo(idCategoriaArticulo);
+    }
+
+    public Articulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoria) {
+        this.nombre = nombre;
+        this.precioUnitario = precioUnitario;
+        this.precioFaltante = precioFaltante;
+        this.cantidad = cantidad;
+        this.pathImage = pathImage;
+        this.categoriaArticulo = new CategoriaArticulo(idCategoria);
     }
 
     public Integer getIdArticulo() {
@@ -80,11 +95,40 @@ public class Articulo {
         return categoriaArticulo;
     }
 
+    public String getPathImage() {
+        return pathImage;
+    }
+
+    public void setPathImage(String pathImage) {
+        this.pathImage = pathImage;
+    }
+
+    public Boolean getEstatus() {
+        return estatus;
+    }
+
+    public void setEstatus(Boolean estatus) {
+        this.estatus = estatus;
+    }
+
     public String getCategoriArticuloNameTable() {
         return categoriaArticulo.getNombre();
+    }
+
+    public void setCategoriArticuloNameTable(String categoriArticuloNameTable) {
+        this.categoriArticuloNameTable = categoriArticuloNameTable;
+    }
+
+    public String getCategoriaArticuloFormaTable() {
+        return categoriaArticuloFormaTable;
+    }
+
+    public void setCategoriaArticuloFormaTable(String categoriaArticuloFormaTable) {
+        this.categoriaArticuloFormaTable = categoriaArticuloFormaTable;
     }
 
     public void setCategoriaArticulo(CategoriaArticulo categoriaArticulo) {
         this.categoriaArticulo = categoriaArticulo;
     }
+
 }

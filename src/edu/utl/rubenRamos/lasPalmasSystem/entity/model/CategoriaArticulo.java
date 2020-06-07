@@ -3,18 +3,25 @@ package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 public class CategoriaArticulo {
     private Integer idCategoria;
     private String nombre;
+    private String forma;
+    private String categoriArticuloNameTable;
 
     public CategoriaArticulo() {
     }
 
-    /*Used by Articulo*/
-    public CategoriaArticulo(String nombre) {
-        this.nombre = nombre;
+    public CategoriaArticulo(Integer idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
-    public CategoriaArticulo(Integer idCategoria, String nombre) {
+    public CategoriaArticulo(Integer idCategoria, String nombre, String forma) {
         this.idCategoria = idCategoria;
         this.nombre = nombre;
+        this.forma = forma;
+    }
+
+    public CategoriaArticulo(String nombreCategoriaArticulo, String forma) {
+        this.nombre = nombreCategoriaArticulo;
+        this.forma = forma;
     }
 
     public Integer getIdCategoria() {
@@ -32,4 +39,14 @@ public class CategoriaArticulo {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public String getForma() {
+        return forma;
+    }
+
+    public void setForma(String forma) {
+        this.forma = forma;
+    }
+
+
 }

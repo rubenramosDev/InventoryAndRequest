@@ -1,7 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces;
 
 
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.EstatusPedido;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.pedido.EstatusPedido;
 
 import java.util.ArrayList;
 

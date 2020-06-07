@@ -9,9 +9,11 @@ public interface IUsuario {
 
     public ArrayList<Usuario> getAllUsuario();
 
-    public String createUsuario(Usuario articulo);
+    public Boolean createUsuario(String nombre, String apellido, String username, String password, String privileges);
 
-    public String updateUsuario(Usuario articulo);
+    public Boolean updateUsuario(Integer idUsuario, String nombre, String apellido, String username, String password, String privileges);
 
-    public String deleteUsuario(Integer idArticulo);
+    public Boolean activeUsuario(Integer idUsuario, String username);
+
+    public Boolean deleteUsuario(Integer idUsuario);
 }

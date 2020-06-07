@@ -2,19 +2,16 @@ package edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public interface IArticulo {
 
-    public ArrayList<Articulo> getAllArticulo();
+    public Boolean createArticulo(Articulo articulo) throws SQLException;
 
-    public Articulo searchArticuloById(Integer idArticulo);
+    public Boolean updateArticulo(Articulo articulo) throws SQLException;
 
-    public ArrayList<Articulo> searchByQuery(String query);
+    public Boolean activeArticulo(Integer idArticulo, String nombre) throws SQLException;
 
-    public String createArticulo(Articulo articulo);
-
-    public String updateArticulo(Articulo articulo);
-
-    public String deleteArticulo(Integer idArticulo);
+    public Boolean deleteArticulo(Integer idArticulo) throws SQLException;
 }

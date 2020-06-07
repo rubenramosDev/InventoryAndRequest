@@ -11,7 +11,13 @@ grey: #495260
 
 .sidebar-button:hover {
     -fx-background-color: #f4f5f7;
-    -fx-text-fill: #495260;
+    -fx-text-fill: #687080;
+}
+
+.sidebar-button-selected {
+    -fx-background-color: #009688;
+    -fx-text-fill: #d5d5db;
+    -fx-background-radius: 5;
 }
 
 

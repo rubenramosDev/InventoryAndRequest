@@ -1,0 +1,9 @@
+
+Y	java:S125ø"<This block of commented-out lines of code should be removed.(Å¡ˆ‘8Ôÿ¿®©.
+F
+java:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ôÿ¿®©.
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÚÈÍ®©.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÓ¤²ıÿÿÿÿ
+z
+java:S1488‡"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8Ôÿ¿®©.

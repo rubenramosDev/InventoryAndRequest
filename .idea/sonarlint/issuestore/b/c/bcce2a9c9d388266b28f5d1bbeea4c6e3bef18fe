@@ -1,0 +1,12 @@
+
+j
+java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®ΐΆ•ψÿÿÿÿ
+j
+java:S2095Q"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£βζ
+A
+java:S1168'"+Return an empty collection instead of null.(¥Ήο
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ƒ‘§‚ώÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ

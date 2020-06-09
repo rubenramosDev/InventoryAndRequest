@@ -1,0 +1,17 @@
+
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øú¸I
+<	java:S131""Add a default case to this switch.(¬É±Öıÿÿÿÿ
+>
+java:S2789E"(Remove this null-check of an "Optional".(ËÄÒ‚
+F
+java:S1481:"+Remove this unused "result" local variable.(Ãë¿²şÿÿÿÿ
+W
+java:S1126F"AReplace this if-then-else statement by a single return statement.(ÃÇûŞ
+>
+java:S2789t"(Remove this null-check of an "Optional".(ËÄÒ‚
+P
+java:S1118":Add a private constructor to hide the implicit public one.(°ì¹õ
+W
+java:S1126u"AReplace this if-then-else statement by a single return statement.(ÃÇûŞ
+U
+java:S1854:":Remove this useless assignment to local variable "result".(Ãë¿²şÿÿÿÿ

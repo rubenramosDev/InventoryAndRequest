@@ -1,0 +1,10 @@
+
+b
+java:S2095'"GUse try-with-resources or close this "Statement" in a "finally" clause.(®À¢•øÿÿÿÿ
+I
+java:S1121,".Extract the assignment out of this expression.(â­¶»ûÿÿÿÿ
+|
+java:S1488"fImmediately return this expression instead of assigning it to the temporary variable "observableList".(¶Å±
+A
+java:S1168="+Return an empty collection instead of null.(¥¹ï
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²†õùÿÿÿÿ

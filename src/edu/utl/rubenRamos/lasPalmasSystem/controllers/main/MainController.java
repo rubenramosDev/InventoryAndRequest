@@ -66,7 +66,6 @@ public class MainController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try {
-
                     selectedItem(btnArticulos);
                     loader("../../views/articulos/frame-articulos.fxml");
                 } catch (IOException e) {
@@ -78,7 +77,6 @@ public class MainController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try {
-
                     selectedItem(btnCliente);
                     loader("../../views/cliente/cliente-frame.fxml");
                 } catch (IOException e) {
@@ -111,7 +109,7 @@ public class MainController implements Initializable {
 
         btnReservaciones.setOnAction(actionEvent -> {
             try {
-                selectedItem(btnPedidos);
+                selectedItem(btnReservaciones);
                 loader("../../views/reservaciones/reservaciones-frame.fxml");
             } catch (IOException e) {
                 e.printStackTrace();

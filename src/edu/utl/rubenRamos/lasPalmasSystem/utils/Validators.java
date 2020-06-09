@@ -7,6 +7,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.Node;
+import javafx.scene.control.ComboBox;
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -24,6 +25,8 @@ public class Validators {
             }
         });
     }
+
+
 
     public static void intValitadorList(List<JFXTextField> fields) {
         for (JFXTextField field : fields) {

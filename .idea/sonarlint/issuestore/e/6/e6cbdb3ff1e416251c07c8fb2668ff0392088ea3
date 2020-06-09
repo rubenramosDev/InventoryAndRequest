@@ -1,0 +1,25 @@
+
+O
+java:S1128"4Remove this unused import 'java.util.regex.Pattern'.(Ã•…Äúÿÿÿÿ
+J
+java:S1128"4Remove this unused import 'java.util.regex.Matcher'.(ëÅ›ã
+c
+java:S5361B"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¤İ¼Áûÿÿÿÿ
+`
+java:S1128"JRemove this unused import 'com.jfoenix.validation.RequiredFieldValidator'.(÷ß’û
+D
+java:S1128	".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï
+U
+java:S1118":Add a private constructor to hide the implicit public one.(ŞÃàÛûÿÿÿÿ
+^
+java:S1128"CRemove this unused import 'com.jfoenix.validation.NumberValidator'.(åÆÓ¶şÿÿÿÿ
+c
+java:S53612"HReplace this call to "replaceAll()" by a call to the "replace()" method.(¤İ¼Áûÿÿÿÿ
+P
+java:S1128";Remove this unused import 'com.jfoenix.controls.JFXButton'.(„•£
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øú¸I
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(öØÈ¢
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(öØÈ¢
+W
+java:S1128
+":Remove this unused import 'javafx.scene.control.ComboBox'.(òÀø¸8àØõ«©.

@@ -1,0 +1,13 @@
+
+o
+java:S1192Œ"SDefine a constant instead of duplicating this literal "Campo obligatorio." 6 times.(¾³¥õıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£¶¢
+g
+java:S1128"QRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.ImageLoader'.(‡øÜÿ
+h
+java:S1128"RRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.ButtonsLogic'.(ö“€–
+z	java:S116<"`Rename this field "ListViewDetallePedido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¾§¸ÿÿÿÿÿ
+>
+java:S1481x")Remove this unused "date" local variable.(ÿÔÄR
+J
+java:S1144v"4Remove this unused private "addingListeners" method.(Ô”ã‡

@@ -18,59 +18,10 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <SplitPane dividerPositions="0.5" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.reservacion.ReservacionCrearController">
     <items>
-        <ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="NEVER">
-            <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="295.0">
-                    <children>
-                        <JFXComboBox editable="true" focusColor="#009688" labelFloat="true" layoutX="14.0" layoutY="122.0" minHeight="29.0" minWidth="237.0" prefHeight="29.0" prefWidth="249.0" promptText="Cliente" unFocusColor="#495260" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
-                        <VBox alignment="CENTER" fillWidth="false" layoutY="168.0" minHeight="86.0" minWidth="250.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
-                            <children>
-                                <HBox alignment="CENTER" minHeight="56.0" minWidth="266.0" VBox.vgrow="ALWAYS">
-                                    <children>
-                                        <VBox minHeight="56.0" minWidth="105.0" HBox.hgrow="ALWAYS">
-                                            <children>
-                                                <Label text="Fecha inicio" VBox.vgrow="ALWAYS">
-                                                    <font>
-                                                        <Font name="Roboto Regular" size="13.0" />
-                                                    </font>
-                                                </Label>
-                                                <JFXDatePicker fx:id="datePickerFechaInicio" editable="false" promptText="Fecha inicio" VBox.vgrow="ALWAYS" />
-                                            </children>
-                                        </VBox>
-                                        <VBox minHeight="56.0" minWidth="105.0" HBox.hgrow="ALWAYS">
-                                            <children>
-                                                <Label text="Fecha fin" VBox.vgrow="ALWAYS">
-                                                    <font>
-                                                        <Font name="Roboto Regular" size="13.0" />
-                                                    </font>
-                                                </Label>
-                                                <JFXDatePicker fx:id="datePickerFechaFin" editable="false" promptText="Fecha fin" VBox.vgrow="ALWAYS" />
-                                            </children>
-                                        </VBox>
-                                    </children>
-                                </HBox>
-                                <JFXButton fx:id="btnConsultar" buttonType="RAISED" styleClass="confirm-button" stylesheets="@../../static/css/buttons.css" text="Consultar" textFill="WHITE" VBox.vgrow="ALWAYS">
-                                    <font>
-                                        <Font name="Roboto Regular" size="13.0" />
-                                    </font>
-                                    <VBox.margin>
-                                        <Insets right="15.0" top="15.0" />
-                                    </VBox.margin>
-                                </JFXButton>
-                            </children>
-                        </VBox>
-                  <AnchorPane layoutX="2.0" layoutY="174.0" prefHeight="322.0" prefWidth="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="174.0">
-                     <children>
-                        <JFXListView fx:id="jfxListView" prefHeight="226.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                     </children>
-                  </AnchorPane>
-                    </children>
-                </AnchorPane>
-            </content>
-        </ScrollPane>
         <StackPane fx:id="stackPane">
             <children>
                 <AnchorPane minHeight="400.0" minWidth="300.0">
@@ -112,5 +63,90 @@
                 </AnchorPane>
             </children>
         </StackPane>
+        <SplitPane fx:id="splitPaneVertical" dividerPositions="0.45" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+            <items>
+                <ScrollPane fitToHeight="true" fitToWidth="true" vbarPolicy="NEVER">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="295.0" style="-fx-background-color: #fff;">
+                            <children>
+                                <JFXComboBox editable="true" focusColor="#009688" labelFloat="true" layoutX="14.0" layoutY="122.0" minHeight="29.0" minWidth="237.0" prefHeight="29.0" prefWidth="249.0" promptText="Cliente" unFocusColor="#495260" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+                                <VBox alignment="CENTER" fillWidth="false" layoutY="168.0" minHeight="86.0" minWidth="250.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
+                                    <children>
+                                        <HBox alignment="CENTER" minHeight="56.0" minWidth="266.0" VBox.vgrow="ALWAYS">
+                                            <children>
+                                                <VBox minHeight="56.0" minWidth="105.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Fecha inicio" VBox.vgrow="ALWAYS">
+                                                            <font>
+                                                                <Font name="Roboto Regular" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <JFXDatePicker fx:id="datePickerFechaInicio" editable="false" promptText="Fecha inicio" VBox.vgrow="ALWAYS" />
+                                                    </children>
+                                                </VBox>
+                                                <VBox minHeight="56.0" minWidth="105.0" HBox.hgrow="ALWAYS">
+                                                    <children>
+                                                        <Label text="Fecha fin" VBox.vgrow="ALWAYS">
+                                                            <font>
+                                                                <Font name="Roboto Regular" size="13.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <JFXDatePicker fx:id="datePickerFechaFin" editable="false" promptText="Fecha fin" VBox.vgrow="ALWAYS" />
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </HBox>
+                                        <JFXButton fx:id="btnConsultar" buttonType="RAISED" styleClass="confirm-button" stylesheets="@../../static/css/buttons.css" text="Consultar" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="Roboto Regular" size="13.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets right="15.0" top="15.0" />
+                                            </VBox.margin>
+                                        </JFXButton>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="22.0" prefHeight="70.0" prefWidth="290.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #f4f5f7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total : " HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text fx:id="txtTotal" boundsType="VISUAL" strokeType="OUTSIDE" strokeWidth="0.0" text="\$5550" />
+                              <JFXButton HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="100.0" />
+                                 </HBox.margin>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="55.0" prefWidth="290.0" style="-fx-background-color: #f4f5f7;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="80.0" layoutY="18.939453125" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.7998046875">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Detalle de reservación" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Roboto Regular" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <JFXListView fx:id="listView" layoutY="54.0" prefHeight="92.0" prefWidth="246.0" stylesheets="@../../static/css/list-view.css" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0" />
+               </children></AnchorPane>
+            </items>
+        </SplitPane>
     </items>
 </SplitPane>

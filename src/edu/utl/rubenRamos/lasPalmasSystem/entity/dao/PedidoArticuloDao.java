@@ -1,33 +1,33 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.dao;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IPedidoArticulo;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.pedido.PedidoArticulo;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.AlquilerArticulo;
 
 import java.util.ArrayList;
 
 public class PedidoArticuloDao implements IPedidoArticulo {
     @Override
-    public ArrayList<PedidoArticulo> getAllPedidoArticulo() {
+    public ArrayList<AlquilerArticulo> getAllPedidoArticulo() {
         return null;
     }
 
     @Override
-    public PedidoArticulo searchPedidoArticuloById(Integer idPedidoArticulo) {
+    public AlquilerArticulo searchPedidoArticuloById(Integer idPedidoArticulo) {
         return null;
     }
 
     @Override
-    public ArrayList<PedidoArticulo> searchByQuery(String query) {
+    public ArrayList<AlquilerArticulo> searchByQuery(String query) {
         return null;
     }
 
     @Override
-    public String createPedidoArticulo(PedidoArticulo pedidoArticulo) {
+    public String createPedidoArticulo(AlquilerArticulo alquilerArticulo) {
         return null;
     }
 
     @Override
-    public String updatePedidoArticulo(PedidoArticulo pedidoArticulo) {
+    public String updatePedidoArticulo(AlquilerArticulo alquilerArticulo) {
         return null;
     }
 

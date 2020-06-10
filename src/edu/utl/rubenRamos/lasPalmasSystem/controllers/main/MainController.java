@@ -35,9 +35,6 @@ public class MainController implements Initializable {
     private JFXButton btnPresupuesto;
 
     @FXML
-    private JFXButton btnPedidos;
-
-    @FXML
     private JFXButton btnReservaciones;
 
     @FXML
@@ -98,19 +95,11 @@ public class MainController implements Initializable {
             }
         });
 
-        btnPedidos.setOnAction(actionEvent -> {
-            try {
-                selectedItem(btnPedidos);
-                loader("../../views/pedidos/pedidos.fxml");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
 
         btnReservaciones.setOnAction(actionEvent -> {
             try {
                 selectedItem(btnReservaciones);
-                loader("../../views/reservaciones/reservaciones-frame.fxml");
+                loader("../../views/alquiler/alquiler-frame.fxml");
             } catch (IOException e) {
                 e.printStackTrace();
             }

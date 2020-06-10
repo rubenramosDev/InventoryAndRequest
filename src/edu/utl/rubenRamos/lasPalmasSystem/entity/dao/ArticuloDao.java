@@ -1,6 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.dao;
 
 import com.mysql.jdbc.PreparedStatement;
+import com.mysql.jdbc.Statement;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.JDBCConnection;
@@ -9,10 +10,49 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.Optional;
 
 public class ArticuloDao implements IArticulo {
+
+    @Override
+    public ArrayList<Articulo> getByDate(Date dateInicio, Date dateFin) throws SQLException {
+        Connection connection = JDBCConnection.getDBConnection();
+        try {
+            ArrayList<Articulo> listArticulos = new ArrayList<>();
+            String sql = "SELECT ar.id_articulo, ar.nombre, ar.precio_unitario, ar.precio_faltante, ar.cantidad, ar.imagen_path, ca.id_categoria, ca.nombre, ca.forma FROM articulos ar INNER JOIN categoria_articulos ca on ar.id_grupo_articulo = ca.id_categoria WHERE ar.estatus = true";
+
+            Statement statement = (Statement) connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            while (resultSet.next()) {
+                Articulo articulo = null;
+                listArticulos.add(articulo = new Articulo(
+                        resultSet.getInt(1),
+                        resultSet.getString(2),
+                        resultSet.getDouble(3),
+                        resultSet.getDouble(4),
+                        resultSet.getInt(5),
+                        resultSet.getString(6),
+                        resultSet.getInt(7),
+                        resultSet.getString(8),
+                        resultSet.getString(9)
+                ));
+                articulo.setCategoriArticuloNameTable(articulo.getCategoriaArticulo().getNombre());
+                articulo.setCategoriaArticuloFormaTable(articulo.getCategoriaArticulo().getForma());
+            }
+            return listArticulos;
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            return null;
+        } finally {
+            connection.close();
+            JDBCConnection.closeConnection();
+        }
+    }
 
     @Override
     public Boolean createArticulo(Articulo articulo) throws SQLException {

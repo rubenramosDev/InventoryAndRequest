@@ -1,19 +1,19 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.pedido.Pedido;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.Alquiler;
 
 public class Faltante {
 
     private Integer idFaltante;
     private Integer cantidad;
     private Articulo idArticulo;
-    private Pedido idPedido;
+    private Alquiler idAlquiler;
 
     public Faltante(Integer idFaltante, Integer cantidad, Integer idArticulo, Integer idPedido) {
         this.idFaltante = idFaltante;
         this.cantidad = cantidad;
         this.idArticulo = new Articulo(idArticulo);
-        this.idPedido = new Pedido(idPedido);
+        this.idAlquiler = new Alquiler(idPedido);
     }
 
     public Integer getIdFaltante() {
@@ -40,11 +40,11 @@ public class Faltante {
         this.idArticulo = idArticulo;
     }
 
-    public Pedido getIdPedido() {
-        return idPedido;
+    public Alquiler getIdAlquiler() {
+        return idAlquiler;
     }
 
-    public void setIdPedido(Pedido idPedido) {
-        this.idPedido = idPedido;
+    public void setIdAlquiler(Alquiler idAlquiler) {
+        this.idAlquiler = idAlquiler;
     }
 }

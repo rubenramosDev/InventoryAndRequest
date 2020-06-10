@@ -1,19 +1,19 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces;
 
 
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.pedido.EstatusPedido;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.EstatusAlquiler;
 
 import java.util.ArrayList;
 
 public interface IEstatusPedido {
 
-    public ArrayList<EstatusPedido> getAllEstatusPedido();
+    public ArrayList<EstatusAlquiler> getAllEstatusPedido();
 
-    public ArrayList<EstatusPedido> searchByQuery(String query);
+    public ArrayList<EstatusAlquiler> searchByQuery(String query);
 
-    public String createEstatusPedido(EstatusPedido estatusPedido);
+    public String createEstatusPedido(EstatusAlquiler estatusAlquiler);
 
-    public String updateEstatusPedido(EstatusPedido estatusPedido);
+    public String updateEstatusPedido(EstatusAlquiler estatusAlquiler);
 
     public String deleteEstatusPedido(Integer idEstatusPedido);
 }

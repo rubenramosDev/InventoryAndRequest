@@ -133,35 +133,9 @@
                         </JFXButton>
                      </children>
                   </AnchorPane>
-                        <AnchorPane>
-                            <children>
-                                <JFXButton fx:id="btnPedidos" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Pedidos" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
-                                    <graphic>
-                                        <AnchorPane>
-                                            <children>
-                                                <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-                                                    <image>
-                                                        <Image url="@../../static/images/order.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </children>
-                                            <padding>
-                                                <Insets right="25.0" />
-                                            </padding>
-                                        </AnchorPane>
-                                    </graphic>
-                                    <font>
-                                        <Font name="Muli SemiBold" size="18.0" />
-                                    </font>
-                                    <padding>
-                                        <Insets left="12.0" right="4.0" top="6.0" />
-                                    </padding>
-                                </JFXButton>
-                            </children>
-                        </AnchorPane>
                   <AnchorPane>
                      <children>
-                        <JFXButton fx:id="btnReservaciones" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Reservaciones" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                        <JFXButton fx:id="btnReservaciones" accessibleText="btnPositionOne" alignment="TOP_LEFT" minHeight="55.0" minWidth="160.0" styleClass="sidebar-button" stylesheets="@../../static/css/side-bar-styles.css" text="Alquilar" textFill="#495260" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
                            <graphic>
                               <AnchorPane>
                                  <children>
@@ -177,7 +151,7 @@
                               </AnchorPane>
                            </graphic>
                            <font>
-                              <Font name="Muli SemiBold" size="15.0" />
+                              <Font name="Muli SemiBold" size="18.0" />
                            </font>
                            <padding>
                               <Insets left="12.0" right="4.0" top="6.0" />

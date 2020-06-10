@@ -1,20 +1,20 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces;
 
 
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.pedido.PedidoArticulo;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.AlquilerArticulo;
 
 import java.util.ArrayList;
 
 public interface IPedidoArticulo {
 
-    public ArrayList<PedidoArticulo> getAllPedidoArticulo();
+    public ArrayList<AlquilerArticulo> getAllPedidoArticulo();
 
-    public PedidoArticulo searchPedidoArticuloById(Integer idPedidoArticulo);
+    public AlquilerArticulo searchPedidoArticuloById(Integer idPedidoArticulo);
 
-    public ArrayList<PedidoArticulo> searchByQuery(String query);
+    public ArrayList<AlquilerArticulo> searchByQuery(String query);
 
-    public String createPedidoArticulo(PedidoArticulo pedidoArticulo);
+    public String createPedidoArticulo(AlquilerArticulo alquilerArticulo);
 
-    public String updatePedidoArticulo(PedidoArticulo pedidoArticulo);
+    public String updatePedidoArticulo(AlquilerArticulo alquilerArticulo);
 
     public String deletePedidoArticulo(Integer idPedidoArticulo);}

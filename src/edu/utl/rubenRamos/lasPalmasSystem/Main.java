@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Locale;
+
 
 public class Main extends Application {
 
@@ -16,6 +18,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 800, 600));
         primaryStage.setMinWidth(600);
         primaryStage.setMaxHeight(800);
+        Locale.setDefault(new Locale("es", "ES"));
         primaryStage.show();
     }
 

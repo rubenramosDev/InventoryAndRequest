@@ -1,9 +1,26 @@
 
-Y	java:S125ø"<This block of commented-out lines of code should be removed.(Å¡ˆ‘8Ôÿ¿®©.
-F
-java:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ôÿ¿®©.
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÚÈÍ®©.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÓ¤²ıÿÿÿÿ
+T
+java:S1135'"2Complete the task associated to this TODO comment.(ßôÃøıÿÿÿÿ8‘ãÑÑ©.
+X
+java:S1141ÿ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8öÎ»Ë©.
+X	java:S125X"<This block of commented-out lines of code should be removed.(Ë­Ä¥8Ÿ¡Ë©.
 z
-java:S1488‡"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8Ôÿ¿®©.
+java:S1488Ÿ"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8öÎ»Ë©.
+‰
+java:S1128"gRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.entity.service.CategoriaArticuloService'.(Ì»¦€ıÿÿÿÿ8¹’‘Ê©.
+N
+java:S1144f"1Remove this unused private "settingTable" method.(Ñ£¥‚8öÎ»Ë©.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÓ¤²ıÿÿÿÿ
+Z
+java:S1128"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ8ì¬ßÊ©.
+f
+java:S1192÷"HDefine a constant instead of duplicating this literal "warning" 3 times.(Ï˜º8öÎ»Ë©.
+j
+java:S1192÷"LDefine a constant instead of duplicating this literal "Advertencia" 3 times.(Ï˜º8öÎ»Ë©.
+F
+java:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8öÎ»Ë©.
+N
+java:S1602~",Remove useless curly braces around statement(©ÓÙƒüÿÿÿÿ8öÎ»Ë©.
+Y	java:S125ß"<This block of commented-out lines of code should be removed.(Å¡ˆ‘8öÎ»Ë©.
+T
+java:S1144Ë"6Remove this unused private "fetchingDataTable" method.(Ã»¢8öÎ»Ë©.

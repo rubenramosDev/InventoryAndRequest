@@ -4,8 +4,11 @@ import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 
 public interface IArticulo {
+
+    public ArrayList<Articulo> getByDate(Date dateInicio, Date dateFin) throws SQLException;
 
     public Boolean createArticulo(Articulo articulo) throws SQLException;
 

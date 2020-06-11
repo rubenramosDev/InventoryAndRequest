@@ -1,5 +1,0 @@
-
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥’êæ
-1
-java:S1700"Rename field "EstatusPedido"(¤»Ï
-l	java:S116"XRename this field "EstatusPedido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤»Ï

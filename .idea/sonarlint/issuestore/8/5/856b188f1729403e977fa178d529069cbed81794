@@ -1,5 +1,0 @@
-
-b	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(Έ΅Ώξύÿÿÿÿ8ς‘¤ί¨.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ϋΐϋ›ύÿÿÿÿ
-H
-java:S1068"+Remove this unused "cliente" private field.(Σ…ί®8ΆΌ¨ί¨.

@@ -1,10 +1,18 @@
 /*
-  <color name="primaryColor">#00c853</color>
-  <color name="primaryLightColor">#5efc82</color>
-  <color name="primaryDarkColor">#009624</color>
-  <color name="primaryTextColor">#000000</color>
-*/
+Colors:
+Main color = #3549B0
 
+Create = #2CB046
+Update = #B08D23
+Delete = #B04656
+OK = #233BB0
+
+DarkBlue- #29487D
+FB color - #3C5898
+Light blue - #9CB2CE
+Grey- #D4D8E8
+Almost white - #FEFEFE
+*/
 /*Main*/
 .main-window {
     -fx-background-color: #E1E2E1;

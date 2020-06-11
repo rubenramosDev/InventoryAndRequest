@@ -1,25 +1,18 @@
-/*
-Colors:
-DarkBlue- #29487D
-FB color - #3C5898
-Light blue - #9CB2CE
-Grey- #D4D8E8
-Almost white - #FEFEFE
-*/
 
 .sidebar-button {
-    -fx-background-color: #FBFAFC;
+    -fx-background-color: #f4f6f8;
     -fx-background-radius: 5;
 }
 
 .sidebar-button:hover {
     -fx-background-color: #D4D8E8;
     -fx-text-fill: #687080;
+    -fx-fill: #D4D8E8;
 }
 
 .sidebar-button-selected {
-    -fx-background-color: #39319E;
-    -fx-text-fill: #d5d5db;
+    -fx-background-color: #712DE3;
+    -fx-text-fill: #fff;
     -fx-background-radius: 5;
 }
 

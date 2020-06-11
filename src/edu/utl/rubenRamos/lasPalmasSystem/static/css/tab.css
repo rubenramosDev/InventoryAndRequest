@@ -1,0 +1,12 @@
+.jfx-tab-pane .headers-region {
+    -fx-background-color: #f4f6f8;
+}
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #f4f6f8;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-stroke: #594ff5;
+    -fx-stroke-width: 10pt;
+}

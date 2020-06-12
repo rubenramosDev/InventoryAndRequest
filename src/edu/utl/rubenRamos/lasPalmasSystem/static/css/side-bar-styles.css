@@ -7,15 +7,18 @@
 .sidebar-button:hover {
     -fx-background-color: #D4D8E8;
     -fx-text-fill: #687080;
-    -fx-fill: #D4D8E8;
+    /*-fx-fill: #D4D8E8;*/
 }
 
 .sidebar-button-selected {
     -fx-background-color: #712DE3;
+    -jfx-button-type: RAISED;
     -fx-text-fill: #fff;
     -fx-background-radius: 5;
 }
 
+.sidebar-svg {
+}
 
 .user-space {
     -fx-background-color: #E5E5E5;

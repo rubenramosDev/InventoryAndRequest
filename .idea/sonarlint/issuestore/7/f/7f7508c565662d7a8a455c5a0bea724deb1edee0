@@ -1,12 +1,16 @@
 
->
-java:S1148E"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
 Z
-java:S10685"8Remove this unused "previousSelectedItem" private field.(â›ˆ²üÿÿÿÿ8õÀ®Ù¨.
-E
-java:S1148h"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8«±Ý¨.
+java:S1068E"8Remove this unused "previousSelectedItem" private field.(â›ˆ²üÿÿÿÿ8õÀ®Ù¨.
 >
-java:S1148]"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+java:S1148o"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+>
+java:S1148|"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+R
+java:S1128"5Remove this unused import 'javafx.scene.paint.Paint'.(Ïæ©¼8úü»¨ª.
+V
+java:S1172¦"3Remove this unused method parameter "selectedItem".(È³½˜ýÿÿÿÿ8Ú »©ª.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÖùÖ®ùÿÿÿÿ
+F
+java:S1148‰"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8×ì›©ª.
 >
-java:S1148P"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+java:S1148c"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

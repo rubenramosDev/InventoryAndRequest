@@ -1,15 +1,19 @@
 
 f
-java:S1192"KDefine a constant instead of duplicating this literal "SQLState: " 3 times.(×¨¯‰ıÿÿÿÿ
-g
-java:S1192"LDefine a constant instead of duplicating this literal " Menssage: " 3 times.(×¨¯‰ıÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷”Æ¿
+java:S1192"KDefine a constant instead of duplicating this literal "SQLState: " 3 times.(×¨¯‰ıÿÿÿÿ
 9
-java:S1148"#Use a logger to log this exception.(òçøì
-A
-java:S1168"+Return an empty collection instead of null.(¥¹ï
-S	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
-S	java:S106*"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+java:S1148"#Use a logger to log this exception.(òçøì
+H
+java:S1172,"&Remove these unused method parameters.(™÷ç“ÿÿÿÿÿ8óß‚Ÿ«.
 C
-java:S24471"-Null is returned but a "Boolean" is expected.(¥¹ï
-S	java:S106:"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+java:S2447-"-Null is returned but a "Boolean" is expected.(¥¹ï
+S	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷”Æ¿
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+A
+java:S1168"+Return an empty collection instead of null.(¥¹ï
+g
+java:S1192"LDefine a constant instead of duplicating this literal " Menssage: " 3 times.(×¨¯‰ıÿÿÿÿ
+
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Œæš‰8óß‚Ÿ«.

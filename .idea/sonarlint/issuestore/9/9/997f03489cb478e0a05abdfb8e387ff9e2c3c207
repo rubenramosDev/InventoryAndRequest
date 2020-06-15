@@ -1,32 +1,32 @@
 
-k
-java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž£âæ
-S	java:S106]"9Replace this use of System.out or System.err by a logger.(ƒ‘§‚þÿÿÿÿ
-g
-java:S1192]"LDefine a constant instead of duplicating this literal " Menssage: " 4 times.(ƒ‘§‚þÿÿÿÿ
-T	java:S106¸"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
->
-java:S2789S"(Remove this null-check of an "Optional".(ËÄÒ‚
-i
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®À¢•øÿÿÿÿ8æÕñ×©.
-f
-java:S1192]"KDefine a constant instead of duplicating this literal "SQLState: " 4 times.(ƒ‘§‚þÿÿÿÿ
-j
-java:S2095?"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-P
-java:S1121!".Extract the assignment out of this expression.(â­¶»ûÿÿÿÿ8æÕñ×©.
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
 j
 java:S2095m"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-H
-java:S11682"+Return an empty collection instead of null.(¥¹ï8æÕñ×©.
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
+f
+java:S1192]"KDefine a constant instead of duplicating this literal "SQLState: " 4 times.(ƒ‘§‚þÿÿÿÿ
 h
 java:S3776:"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(––†é
+H
+java:S11682"+Return an empty collection instead of null.(¥¹ï8æÕñ×©.
 C
 java:S1125V"(Remove the literal "true" boolean value.(¡–ñÜÿÿÿÿÿ
 k
 java:S2095‹"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-S	java:S106|"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
-T	java:S106 "9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž£âæ
 k
 java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
+g
+java:S1192]"LDefine a constant instead of duplicating this literal " Menssage: " 4 times.(ƒ‘§‚þÿÿÿÿ
+i
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®À¢•øÿÿÿÿ8æÕñ×©.
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
+k
+java:S2095¯"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
+>
+java:S2789S"(Remove this null-check of an "Optional".(ËÄÒ‚
+j
+java:S2095?"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
+S	java:S106]"9Replace this use of System.out or System.err by a logger.(ƒ‘§‚þÿÿÿÿ
+P
+java:S1121!".Extract the assignment out of this expression.(â­¶»ûÿÿÿÿ8æÕñ×©.

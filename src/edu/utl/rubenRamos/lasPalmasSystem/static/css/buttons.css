@@ -1,42 +1,23 @@
 /*Buttons*/
 .create-button {
-    -fx-background-color: #56ab2f;
-    -fx-background-radius: 8, 7, 6;
-}
-
-.create-button:hover {
-
-    -fx-background-color: linear-gradient(#a8e063, #56ab2f), linear-gradient(#a8e063 0%, #56ab2f 100%);
+    -fx-background-color: #114FA6;
     -fx-background-radius: 8, 7, 6;
 }
 
 .update-button {
-    -fx-background-color: #FDC830;
+    -fx-background-color: #BFB719;
     -fx-background-radius: 8, 7, 6;
 }
 
-.update-button:hover {
-    -fx-background-color: linear-gradient(#F37335, #FDC830), linear-gradient(#F37335 0%, #FDC830 100%);
-    -fx-background-radius: 8, 7, 6;
-}
 
 .delete-button {
-    -fx-background-color: #FF416C;
+    -fx-background-color: #BF3322;
     -fx-background-radius: 8, 7, 6;
 }
 
-
-.delete-button:hover {
-    -fx-background-color: linear-gradient(#FF4B2B, #FF416C), linear-gradient(#FF4B2B 0%, #FF416C 100%);
-    -fx-background-radius: 8, 7, 6;
-}
 
 .confirm-button {
-    -fx-background-color: #4286f4;
+    -fx-background-color: #F26101;
     -fx-background-radius: 8, 7, 6;
 }
 
-.confirm-button:hover {
-    -fx-background-color: linear-gradient(#373b44, #4286f4), linear-gradient(#373b44 0%, #4286f4 100%);
-    -fx-background-radius: 8, 7, 6;
-}

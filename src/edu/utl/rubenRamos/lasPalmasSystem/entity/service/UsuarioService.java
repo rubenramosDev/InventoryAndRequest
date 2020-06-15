@@ -8,11 +8,10 @@ import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class UsuarioService implements IUsuario {
+public class UsuarioService {
 
-    private UsuarioDao usuarioDao = new UsuarioDao();
+    private IUsuario usuarioDao = new UsuarioDao();
 
-    @Override
     public ArrayList<Usuario> getAllUsuario() {
         try {
             return usuarioDao.getAllUsuario();
@@ -22,10 +21,9 @@ public class UsuarioService implements IUsuario {
         }
     }
 
-    @Override
     public Boolean createUsuario(String nombre, String apellido, String username, String password, String privileges) {
         try {
-            return usuarioDao.createUsuario(new Usuario(nombre, apellido,username, password,privileges));
+            return usuarioDao.createUsuario(new Usuario(nombre, apellido, username, password, privileges));
         } catch (SQLException exception) {
             ContextualWindow.contextualWindowException(exception);
             System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
@@ -33,7 +31,6 @@ public class UsuarioService implements IUsuario {
         }
     }
 
-    @Override
     public Boolean updateUsuario(Integer idUsuario, String nombre, String apellido, String username, String password, String privileges) {
         try {
             return usuarioDao.updateUsuario(new Usuario(idUsuario, nombre, apellido, username, password, privileges));
@@ -44,12 +41,10 @@ public class UsuarioService implements IUsuario {
         }
     }
 
-    @Override
     public Boolean activeUsuario(Integer idUsuario, String username) {
         return null;
     }
 
-    @Override
     public Boolean deleteUsuario(Integer idUsuario) {
         try {
             return usuarioDao.deleteUsuario(idUsuario);

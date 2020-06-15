@@ -1,37 +1,21 @@
 /*
 Colors:
-Main color = #3549B0
+#ORANGE     : #F26101
+#BLUE-GREY  : #8AA8B0
+#GREY       : #DEDEDE
+#DARK-GREY  : #313732
 
-Create = #2CB046
-Update = #B08D23
-Delete = #B04656
-OK = #233BB0
-
-DarkBlue- #29487D
-FB color - #3C5898
-Light blue - #9CB2CE
-Grey- #D4D8E8
-Almost white - #FEFEFE
+https://colordesigner.io/#313732-8AA8B0-DEDEDE-FFFFFF-F26101
 */
 /*Main*/
 .main-window {
-    -fx-background-color: #E1E2E1;
+    -fx-background-color: #fff;
 }
 
 .main-grid {
-    -fx-background-color: #E1E2E1;
+    -fx-background-color: #fff;
 }
 
-.top-panel {
-    -fx-background-color: #00c853;
-    /*-fx-background-color: linear-gradient(from 25% 75% to 100% 60%, #00c853, #5efc82);*/
+.top-panel{
+    -fx-background-color: #8AA8B0;
 }
-
-.texto-topPanel {
-    -fx-text-fill: #fff;
-}
-
-.pruebas {
-    -fx-background-color: #66ffa6;
-}
-

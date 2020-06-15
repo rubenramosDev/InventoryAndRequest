@@ -1,7 +1,5 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.Alquiler;
-
 public class Faltante {
 
     private Integer idFaltante;

@@ -1,7 +1,4 @@
-package edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler;
-
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Cliente;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Usuario;
+package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
 import java.util.Date;
 
@@ -16,6 +13,7 @@ public class Alquiler {
     private String nombreRecibe;
     private Double flete;
     private Double descuento;
+    private Double pagoActual;
     private Double total;
     private String notas;
     private Usuario usuario;
@@ -25,7 +23,7 @@ public class Alquiler {
     public Alquiler() {
     }
 
-    public Alquiler(Integer idPedido, Date fechaInicio, Date fechaFin, String direccionEntrega, String nombreEntrega, String nombreRecolecta, String nombreRecibe, Double flete, Double descuento, Double total, String notas, Integer idUsuario, Integer idCliente, Integer idEstatusPedido) {
+    public Alquiler(Integer idPedido, Date fechaInicio, Date fechaFin, String direccionEntrega, String nombreEntrega, String nombreRecolecta, String nombreRecibe, Double flete, Double descuento, Double pagoActual, Double total, String notas, Integer idUsuario, Integer idCliente, Integer idEstatusPedido) {
         this.idPedido = idPedido;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -35,6 +33,7 @@ public class Alquiler {
         this.nombreRecibe = nombreRecibe;
         this.flete = flete;
         this.descuento = descuento;
+        this.pagoActual = pagoActual;
         this.total = total;
         this.notas = notas;
         this.usuario = new Usuario(idUsuario);
@@ -132,6 +131,14 @@ public class Alquiler {
 
     public void setNotas(String notas) {
         this.notas = notas;
+    }
+
+    public Double getPagoActual() {
+        return pagoActual;
+    }
+
+    public void setPagoActual(Double pagoActual) {
+        this.pagoActual = pagoActual;
     }
 
     public Usuario getUsuario() {

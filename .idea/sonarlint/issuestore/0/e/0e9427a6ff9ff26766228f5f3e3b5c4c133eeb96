@@ -1,0 +1,10 @@
+
+I
+java:S16029",Remove useless curly braces around statement( ¾ƒ€8ëÁ‘¡«.
+@
+java:S1148T"#Use a logger to log this exception.(á…Ð†8Âà•¡«.
+N
+java:S16026",Remove useless curly braces around statement(ö¤Ç®þÿÿÿÿ8›ê–¡«.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æÃÕ›úÿÿÿÿ
+L
+java:S5411O"*Use the primitive boolean expression here.(ýü‡Ìûÿÿÿÿ8Âà•¡«.

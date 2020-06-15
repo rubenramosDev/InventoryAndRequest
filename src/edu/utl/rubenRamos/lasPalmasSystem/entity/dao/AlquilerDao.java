@@ -1,7 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.dao;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IAlquiler;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.Alquiler;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Alquiler;
 
 import java.util.ArrayList;
 

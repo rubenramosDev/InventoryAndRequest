@@ -2,6 +2,7 @@ package edu.utl.rubenRamos.lasPalmasSystem.entity.dao;
 
 import com.mysql.jdbc.PreparedStatement;
 import com.mysql.jdbc.Statement;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IUsuario;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.JDBCConnection;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Usuario;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
@@ -14,7 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Optional;
 
-public class UsuarioDao {
+public class UsuarioDao implements IUsuario {
 
     public ArrayList<Usuario> getAllUsuario() throws SQLException {
         Connection connection = JDBCConnection.getDBConnection();

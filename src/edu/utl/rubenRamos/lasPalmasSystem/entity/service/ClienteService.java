@@ -1,6 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.service;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.dao.ClienteDao;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.ICliente;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Cliente;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 public class ClienteService {
 
-    private ClienteDao clienteDao = new ClienteDao();
+    private ICliente clienteDao = new ClienteDao();
 
     public ArrayList<Cliente> getAllCliente() {
         try {

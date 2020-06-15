@@ -108,7 +108,7 @@ public class ClienteController implements Initializable {
                             txtOrganizacion.getText()
                     );
                     if (flag) {
-                        ContextualWindow.contextualWindow("information", splitPaneArticulos, "El cliente recurrente se agregó con éxito.", "Información");
+                        ContextualWindow.contextualWindow("information", splitPaneArticulos, "El cliente se agregó con éxito.", "Información");
                         cleaningFields();
                     }
                 } catch (NumberFormatException numberFormatException) {
@@ -131,7 +131,7 @@ public class ClienteController implements Initializable {
                         txtOrganizacion.getText()
                 );
                 if (flag) {
-                    ContextualWindow.contextualWindow("information", splitPaneArticulos, "El cliente recurrente se actualizó con éxito.", "Información");
+                    ContextualWindow.contextualWindow("information", splitPaneArticulos, "El cliente se actualizó con éxito.", "Información");
                     cleaningFields();
                 }
             } else {

@@ -3,20 +3,27 @@
 java:S1126„"AReplace this if-then-else statement by a single return statement.(’¢–¡ùÿÿÿÿ
 :
 java:S1148Ÿ"#Use a logger to log this exception.(á…Ð†
+C
+java:S1602ö",Remove useless curly braces around statement(í¾ì°
 c
 java:S1192›"LDefine a constant instead of duplicating this literal "information" 3 times.(§Ì‹Í
-F
-java:S5411š"*Use the primitive boolean expression here.(ýü‡Ìûÿÿÿÿ
-d
-java:S1192›"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(§Ì‹Í
 :
 java:S1148ä"#Use a logger to log this exception.(òçøì
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦þÿÿÿÿ
+F
+java:S5411š"*Use the primitive boolean expression here.(ýü‡Ìûÿÿÿÿ
+U
+java:S1144ó"2Remove this unused private "filteringData" method.(ÖÖøÈüÿÿÿÿ8²ó· «.
+a
+java:S1128"?Remove this unused import 'javafx.concurrent.WorkerStateEvent'.(Íí…Èùÿÿÿÿ8²ó· «.
+C
+java:S1602Ç",Remove useless curly braces around statement(¬³ÙÝ
 F
 java:S5411­"*Use the primitive boolean expression here.(ýü‡Ìûÿÿÿÿ
 i
 java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ô”ã‡
-C
-java:S1602Ç",Remove useless curly braces around statement(¬³ÙÝ
-C
-java:S1602ö",Remove useless curly braces around statement(í¾ì°
+T
+java:S1144Ì"1Remove this unused private "selectedItem" method.(Ù×Ó¶ýÿÿÿÿ8²ó· «.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦þÿÿÿÿ
+d
+java:S1192›"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(§Ì‹Í
+]	java:S125h"<This block of commented-out lines of code should be removed.(ª¥ éÿÿÿÿÿ8ÉŠ¸ «.

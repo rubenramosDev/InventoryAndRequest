@@ -1,32 +1,27 @@
 
-Z
-java:S1128"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ8ì¬ßÊ©.
-O
-java:S1481ª",Remove this unused "dateFin" local variable.(¿Ò¶ãùÿÿÿÿ8­šÈ×©.
-N
-java:S1144i"1Remove this unused private "settingTable" method.(Ñ£¥‚8úá“Ö©.
-z
-java:S1488¤"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8öÎ»Ë©.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­¬¤Úùÿÿÿÿ
+T
+java:S1135'"2Complete the task associated to this TODO comment.(ßôÃøıÿÿÿÿ8ÔÉİ «.
 j
-java:S1192û"LDefine a constant instead of duplicating this literal "Advertencia" 3 times.(Ï˜º8öÎ»Ë©.
-X
-java:S1141„"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8öÎ»Ë©.
-F
-java:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8öÎ»Ë©.
-R
-java:S1481©"/Remove this unused "dateInicio" local variable.(Ó‘äÛùÿÿÿÿ8¦ÿÇ×©.
-T
-java:S1135&"2Complete the task associated to this TODO comment.(ßôÃøıÿÿÿÿ8úá“Ö©.
-‰
-java:S1128"gRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.entity.service.CategoriaArticuloService'.(Ì»¦€ıÿÿÿÿ8¹’‘Ê©.
-X	java:S125Z"<This block of commented-out lines of code should be removed.(Ë­Ä¥8úá“Ö©.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÓ¤²ıÿÿÿÿ
-Y	java:S125ä"<This block of commented-out lines of code should be removed.(Å¡ˆ‘8úá“Ö©.
+java:S1192ö"LDefine a constant instead of duplicating this literal "Advertencia" 4 times.(Ï˜º8ÌÆî¡«.
 f
-java:S1192û"HDefine a constant instead of duplicating this literal "warning" 4 times.(Ï˜º8öÎ»Ë©.
+java:S1192ö"HDefine a constant instead of duplicating this literal "warning" 4 times.(Ï˜º8ÌÆî¡«.
+X
+java:S1141ÿ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÌÆî¡«.
+F
+java:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÌÆî¡«.
+F
+java:S1148¥"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÌÆî¡«.
+z
+java:S1488Ÿ"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8ÌÆî¡«.
+N
+java:S1602|",Remove useless curly braces around statement(©ÓÙƒüÿÿÿÿ8ÌÆî¡«.
 O
-java:S1602",Remove useless curly braces around statement(©ÓÙƒüÿÿÿÿ8úá“Ö©.
-T
-java:S1144Ğ"6Remove this unused private "fetchingDataTable" method.(ší¢8úá“Ö©.
-D
-java:S1172Ğ"&Remove these unused method parameters.(ší¢8•šâ×©.
+java:S1602Ï",Remove useless curly braces around statement(ûï¡•ùÿÿÿÿ8ÌÆî¡«.
+O
+java:S1602",Remove useless curly braces around statement(ÖÍŒ‹ıÿÿÿÿ8ÌÆî¡«.
+P
+java:S1135±"2Complete the task associated to this TODO comment.(õ÷Ö8ÌÆî¡«.
+Z
+java:S1068U"8Remove this unused "articuloTableService" private field.(Áƒéµüÿÿÿÿ8ÌÆî¡«.
+Y	java:S125²"<This block of commented-out lines of code should be removed.(—ıÁµ8ÌÆî¡«.

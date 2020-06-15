@@ -1,4 +1,4 @@
-package edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler;
+package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
 public class EstatusAlquiler {
 

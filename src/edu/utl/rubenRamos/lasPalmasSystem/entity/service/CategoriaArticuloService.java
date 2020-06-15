@@ -1,6 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.service;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.dao.CategoriaArticuloDao;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.ICategoriaArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.CategoriaArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 public class CategoriaArticuloService {
 
-    private CategoriaArticuloDao categoriaArticuloDao = new CategoriaArticuloDao();
+    private ICategoriaArticulo categoriaArticuloDao = new CategoriaArticuloDao();
 
     public ArrayList<CategoriaArticulo> getAllCategoriaArticulo() {
         try {

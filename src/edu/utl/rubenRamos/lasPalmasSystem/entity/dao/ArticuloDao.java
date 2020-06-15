@@ -23,7 +23,7 @@ public class ArticuloDao implements IArticulo {
         Connection connection = JDBCConnection.getDBConnection();
         try {
             ArrayList<Articulo> listArticulos = new ArrayList<>();
-            String sql = "SELECT ar.id_articulo, ar.nombre, ar.precio_unitario, ar.precio_faltante, ar.cantidad, ar.imagen_path, ca.id_categoria, ca.nombre, ca.forma FROM articulos ar INNER JOIN categoria_articulos ca on ar.id_grupo_articulo = ca.id_categoria WHERE ar.estatus = true";
+            String sql = "SELECT ar.id_articulo, ar.nombre, ar.precio_unitario, ar.precio_faltante, ar.cantidad, ar.imagen_path, ca.id_categoria, ca.nombre, ca.forma FROM articulos ar INNER JOIN categoria_articulos ca on ar.id_categoria_articulo = ca.id_categoria WHERE ar.estatus = true";
 
             Statement statement = (Statement) connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
@@ -58,7 +58,7 @@ public class ArticuloDao implements IArticulo {
     public Boolean createArticulo(Articulo articulo) throws SQLException {
         Connection connection = JDBCConnection.getDBConnection();
         try {
-            String sql = "INSERT INTO articulos (nombre, precio_unitario, precio_faltante, cantidad, imagen_path, estatus, id_grupo_articulo) VALUES (?, ?, ?, ?,?,?,?)";
+            String sql = "INSERT INTO articulos (nombre, precio_unitario, precio_faltante, cantidad, imagen_path, estatus, id_categoria_articulo) VALUES (?, ?, ?, ?,?,?,?)";
 
             PreparedStatement statement = (PreparedStatement) connection.prepareStatement(sql);
             statement.setString(1, articulo.getNombre());
@@ -104,7 +104,7 @@ public class ArticuloDao implements IArticulo {
     public Boolean updateArticulo(Articulo articulo) throws SQLException {
         Connection connection = JDBCConnection.getDBConnection();
         try {
-            String sql = "Update articulos SET nombre=? , precio_unitario=?, precio_faltante=?, cantidad=?, imagen_path=?, id_grupo_articulo=? WHERE id_articulo=?";
+            String sql = "Update articulos SET nombre=? , precio_unitario=?, precio_faltante=?, cantidad=?, imagen_path=?, id_categoria_articulo=? WHERE id_articulo=?";
 
             PreparedStatement statement = (PreparedStatement) connection.prepareStatement(sql);
             statement.setString(1, articulo.getNombre());

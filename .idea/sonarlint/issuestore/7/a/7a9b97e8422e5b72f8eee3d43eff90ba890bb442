@@ -1,32 +1,30 @@
 
-‹
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(εΥ³ψÿÿÿÿ
->
-java:S2789G"(Remove this null-check of an "Optional".(ΛΔÒ‚
-b
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®ΐΆ•ψÿÿÿÿ
-k
-java:S2095†"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
-j
-java:S2095|"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
-j
-java:S2095`"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
-j
-java:S20955"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
-k
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
-f
-java:S1192Q"KDefine a constant instead of duplicating this literal "SQLState: " 4 times.(ƒ‘§‚ώÿÿÿÿ
-g
-java:S1192Q"LDefine a constant instead of duplicating this literal " Menssage: " 4 times.(ƒ‘§‚ώÿÿÿÿ
+[	java:S106©"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ8δϋ«.
+q
+java:S2095}"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ8δϋ«.
+m
+java:S1192R"KDefine a constant instead of duplicating this literal "SQLState: " 4 times.(ƒ‘§‚ώÿÿÿÿ8δϋ«.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£βζ
+[	java:S106’"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ8δϋ«.
+E
+java:S2789H"(Remove this null-check of an "Optional".(ΛΔÒ‚8δϋ«.
+k
+java:S2095‡"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ
+o
+java:S37761"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ή«ÿΔ8δϋ«.
+q
+java:S2095a"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ8δϋ«.
 A
-java:S1168)"+Return an empty collection instead of null.(¥Ήο
-h
-java:S37760"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ή«ÿΔ
-C
-java:S1125J"(Remove the literal "true" boolean value.(΅–ράÿÿÿÿÿ
-S	java:S106Q"9Replace this use of System.out or System.err by a logger.(ƒ‘§‚ώÿÿÿÿ
-S	java:S106n"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ
-T	java:S106‘"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ
-T	java:S106¨"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ
+java:S1168*"+Return an empty collection instead of null.(¥Ήο
+r
+java:S2095 "OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ8δϋ«.
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(ƒ‘§‚ώÿÿÿÿ8δϋ«.
+J
+java:S1125K"(Remove the literal "true" boolean value.(΅–ράÿÿÿÿÿ8δϋ«.
+q
+java:S20956"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€χρ¬ώÿÿÿÿ8δϋ«.
+Z	java:S106o"9Replace this use of System.out or System.err by a logger.(Χ¨―‰ύÿÿÿÿ8δϋ«.
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®ΐΆ•ψÿÿÿÿ
+n
+java:S1192R"LDefine a constant instead of duplicating this literal " Menssage: " 4 times.(ƒ‘§‚ώÿÿÿÿ8δϋ«.

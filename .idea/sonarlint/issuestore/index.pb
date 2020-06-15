@@ -23,8 +23,6 @@ Hsrc/edu/utl/rubenRamos/lasPalmasSystem/views/usuarios/usuario-frame.fxml,b/5/b
 Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/frame-articulos.fxml,0/6/0688e7ea7a7f6bf33dada63e4fdc46cd6dc213f7
 {
 Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/grupo-articulos.fxml,d/6/d6afb1f343b2f09fabff7bfdd9fa830e26f02d8c
-y
-Isrc/edu/utl/rubenRamos/lasPalmasSystem/views/presupuesto/presupuesto.fxml,5/b/5b18f68d9d6cc06cf02b9472b505613a36caf349
 q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/ClienteDao.java,b/c/bcce2a9c9d388266b28f5d1bbeea4c6e3bef18fe
 q
@@ -143,3 +141,11 @@ y
 Isrc/edu/utl/rubenRamos/lasPalmasSystem/views/alquiler/alquiler-frame.fxml,8/1/810c876c94337ea5e12128fa8c83001b357e039f
 i
 9src/edu/utl/rubenRamos/lasPalmasSystem/static/css/tab.css,1/9/19eff62ae237732321c2b4c1065bc0360193382f
+z
+Jsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/AlquilerService.java,2/0/20f13457acdea7d9550346f18e9ac11ad9aae78f
+Å
+Qsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/EstatusAlquilerService.java,2/d/2d045fa166e8700dddfdd2bb15f6bcdd14dfd7fb
+w
+Gsrc/edu/utl/rubenRamos/lasPalmasSystem/views/cliente/crear-cliente.fxml,3/0/30c068baec78afc8b14483c6a10f8050aee4897e
+Ü
+Vsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/cliente/ClienteCrearController.java,0/e/0e9427a6ff9ff26766228f5f3e3b5c4c133eeb96

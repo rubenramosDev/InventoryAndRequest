@@ -1,6 +1,4 @@
-package edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler;
-
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
+package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
 public class AlquilerArticulo {
 
@@ -49,5 +47,9 @@ public class AlquilerArticulo {
 
     public void setAlquiler(Alquiler alquiler) {
         this.alquiler = alquiler;
+    }
+
+    public Double monto() {
+        return articulo.getPrecioUnitario() * cantidad;
     }
 }

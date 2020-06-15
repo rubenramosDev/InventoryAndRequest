@@ -1,6 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.service;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.dao.ArticuloDao;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 
 public class ArticuloService {
 
-    private ArticuloDao articuloDao = new ArticuloDao();
+    private IArticulo articuloDao = new ArticuloDao();
 
     public Boolean createArticulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, Integer idCategoria, String pathImage) {
         try {

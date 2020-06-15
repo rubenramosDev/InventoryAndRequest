@@ -8,18 +8,20 @@ import edu.utl.rubenRamos.lasPalmasSystem.entity.service.ClienteService;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.service.tasks.ArticuloTableService;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.Validators;
-import javafx.concurrent.WorkerStateEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 
@@ -33,12 +35,10 @@ import java.util.concurrent.atomic.AtomicReference;
 
 public class AlquilerCrearController implements Initializable {
 
-
     /*
      * TODO TENGO QUE AGREGAR LAS FECHA DEL PEDIDO A LA RESERVACION, PARA CALCULAR EL MONTO TOTAL TAMBIEN !!!!!!!!
      *  SOLAMENTE ESTOY HACIENDO EL CALCULO POR UN DÍA
      *  */
-
 
     @FXML
     private JFXComboBox<String> comboCliente;
@@ -74,6 +74,9 @@ public class AlquilerCrearController implements Initializable {
     private Text txtTotal;
     @FXML
     private Text txtDias;
+    @FXML
+    private JFXButton btnAddUser;
+
 
     private Map<Integer, Integer> verify = new HashMap<>();
     private double total = 0.0;
@@ -87,18 +90,10 @@ public class AlquilerCrearController implements Initializable {
     }
 
     private void initData() {
-//        settingTable();
-//        fetchingDataTable();
-        addingButtons();
+        settingTable();
+        addingButtonsToTable();
         settingUpCalendars();
         fillingComboBox();
-        tableView.setDisable(true);
-
-        Region veil = new Region();
-        veil.setStyle("-fx-background-color:rgba(0,0,0,0.4)");
-        veil.setPrefHeight(358);
-        veil.setPrefWidth(300);
-        stackPane.getChildren().addAll(veil);
         addingListeners();
     }
 
@@ -280,7 +275,7 @@ public class AlquilerCrearController implements Initializable {
         });
     }
 
-    private void addingButtons() {
+    private void addingButtonsToTable() {
         TableColumn actionCol = new TableColumn("Agregar");
         actionCol.setStyle("-fx-alignment: CENTER-RIGHT;");
 
@@ -333,28 +328,25 @@ public class AlquilerCrearController implements Initializable {
         tableView.getColumns().add(actionCol);
     }
 
-    private void fetchingDataTable(Date fechaInicio, Date fechaFin) {
-        Region veil = new Region();
-        ProgressBar progressBar = new ProgressBar();
+    private void addingListeners() {
+        datePickerFechaFin.setOnAction(actionEvent -> {
 
-        veil.setStyle("-fx-background-color:rgba(0,0,0,0.4)");
-        veil.setPrefHeight(400);
-        veil.setPrefWidth(300);
-
-        progressBar.progressProperty().bind(articuloTableService.progressProperty());
-        veil.visibleProperty().bind(articuloTableService.runningProperty());
-        progressBar.visibleProperty().bind(articuloTableService.runningProperty());
-
-        tableView.itemsProperty().bind(articuloTableService.valueProperty());
-
-        stackPane.getChildren().addAll(veil, progressBar);
-        articuloTableService.start();
-        articuloTableService.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
-            @Override
-            public void handle(WorkerStateEvent workerStateEvent) {
-                tableView.itemsProperty().unbind();
-//                filteringData();
-//                selectedItem();
+        });
+        btnAddUser.setOnAction(actionEvent -> {
+            addUser();
+        });
+        btnConsultar.setOnAction(actionEvent -> {
+            ZoneId defaultZoneId = ZoneId.systemDefault();
+            LocalDate localDateFin = datePickerFechaFin.getValue();
+            LocalDate localDateInicio = datePickerFechaInicio.getValue();
+            if (localDateFin == null || localDateInicio == null) {
+                ContextualWindow.contextualWindow("warning", anchorLeft, "Campos vacíos", "Amabas fechas deben estar completas.");
+            } else {
+                Date dateInicio = Date.from(localDateInicio.atStartOfDay(defaultZoneId).toInstant());
+                Date dateFin = Date.from(localDateFin.atStartOfDay(defaultZoneId).toInstant());
+                dias = (localDateFin.getDayOfYear() - localDateInicio.getDayOfYear()) + 1;
+                txtDias.setText(String.valueOf(dias));
+                checkingUpDates(dateInicio, dateFin);
             }
         });
     }
@@ -414,19 +406,33 @@ public class AlquilerCrearController implements Initializable {
         });
     }
 
-    private void addingListeners() {
-        datePickerFechaFin.setOnAction(actionEvent -> {
-            ZoneId defaultZoneId = ZoneId.systemDefault();
-            LocalDate localDateFin = datePickerFechaFin.getValue();
-            LocalDate localDateInicio = datePickerFechaInicio.getValue();
-            if (localDateFin == null || localDateInicio == null) {
-                ContextualWindow.contextualWindow("warning", anchorLeft, "Campos vacíos", "Amabas fechas deben estar completas.");
-            } else {
-                Date dateInicio = Date.from(localDateInicio.atStartOfDay(defaultZoneId).toInstant());
-                Date dateFin = Date.from(localDateFin.atStartOfDay(defaultZoneId).toInstant());
-                dias = (localDateFin.getDayOfYear() - localDateInicio.getDayOfYear()) + 1;
-                txtDias.setText(String.valueOf(dias));
-            }
-        });
+    private void addUser() {
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../../views/cliente/crear-cliente.fxml"));
+            Stage stage = new Stage();
+            stage.setOnCloseRequest(windowEvent -> {
+                fillingComboBox();
+            });
+            stage.setTitle("Agregar nuevo cliente");
+            stage.setScene(new Scene(root, 450, 450));
+            stage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void checkingUpDates(Date fechaInicio, Date fechFin) {
+
+        if (fechFin.before(fechaInicio)) {
+            ContextualWindow.contextualWindow("error", anchorLeft, "El fin del alquiler no puede empezar antes del inicio.", "Advertencia");
+        }
+
+
+
+        /*TODO Consultar todos los articulos disponibles para ser rentados entre estas fechas
+         * //        fetchingDataTable();
+         *
+         * */
     }
 }

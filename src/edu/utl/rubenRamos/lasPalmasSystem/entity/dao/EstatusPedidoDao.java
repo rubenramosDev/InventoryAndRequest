@@ -1,7 +1,7 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.dao;
 
 import edu.utl.rubenRamos.lasPalmasSystem.entity.interfaces.IEstatusPedido;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.alquiler.EstatusAlquiler;
+import edu.utl.rubenRamos.lasPalmasSystem.entity.model.EstatusAlquiler;
 
 import java.util.ArrayList;
 

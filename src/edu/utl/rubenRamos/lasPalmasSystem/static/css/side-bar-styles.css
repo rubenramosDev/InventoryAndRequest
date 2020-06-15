@@ -1,26 +1,32 @@
 
 .sidebar-button {
-    -fx-background-color: #f4f6f8;
+    -fx-background-color: #FFF;
     -fx-background-radius: 5;
+    -fx-text-fill: #495260;
 }
 
 .sidebar-button:hover {
-    -fx-background-color: #D4D8E8;
+    -fx-background-color: #8AA8B0;
     -fx-text-fill: #687080;
-    /*-fx-fill: #D4D8E8;*/
+    -fx-fill: #495260;
 }
 
 .sidebar-button-selected {
-    -fx-background-color: #712DE3;
+    -fx-background-color: #DEDEDE;
     -jfx-button-type: RAISED;
-    -fx-text-fill: #fff;
+    -fx-text-fill: #F26101;
     -fx-background-radius: 5;
 }
 
+.sidebar-svg-notchosen {
+    -fx-fill: #495260;
+}
+
 .sidebar-svg {
+    -fx-fill: #F26101;
 }
 
 .user-space {
-    -fx-background-color: #E5E5E5;
+    -fx-background-color: #DEDEDE;
     -fx-background-radius: 13;
 }

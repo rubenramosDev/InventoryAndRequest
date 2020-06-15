@@ -8,7 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
+import javafx.scene.shape.FillRule;
 import javafx.scene.shape.SVGPath;
 import javafx.scene.text.Text;
 
@@ -30,6 +30,10 @@ public class MainController implements Initializable {
 
     @FXML
     private Text txtPermisos;
+
+
+    @FXML
+    private SVGPath svgPresupuesto;
 
     @FXML
     private JFXButton btnPresupuesto1;
@@ -92,8 +96,6 @@ public class MainController implements Initializable {
             public void handle(ActionEvent actionEvent) {
                 try {
                     selectedItem(btnArticulos);
-
-                    fillingSvg(svgArticulos, 3);
                     loader("../../views/articulos/frame-articulos.fxml");
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -105,7 +107,6 @@ public class MainController implements Initializable {
             public void handle(ActionEvent actionEvent) {
                 try {
                     selectedItem(btnCliente);
-                    fillingSvg(svgClientes, 4);
                     loader("../../views/cliente/cliente-frame.fxml");
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -117,7 +118,6 @@ public class MainController implements Initializable {
             @Override
             public void handle(ActionEvent actionEvent) {
                 try {
-                    fillingSvg(svgUsuarios, 6);
                     selectedItem(btnUsuarios);
                     loader("../../views/usuarios/usuario-frame.fxml");
                 } catch (IOException e) {
@@ -129,8 +129,6 @@ public class MainController implements Initializable {
 
         btnAlquiler.setOnAction(actionEvent -> {
             try {
-                actual.setContent(svgAlquilar.getContent());
-                fillingSvg(svgAlquilar, 2);
                 selectedItem(btnAlquiler);
                 loader("../../views/alquiler/alquiler-frame.fxml");
             } catch (IOException e) {
@@ -147,24 +145,42 @@ public class MainController implements Initializable {
         if (selectedItem != null) {
             if (button != selectedItem) {
                 button.getStyleClass().add("sidebar-button-selected");
+                SVGPath newPath = choosingSvg(button);
+                newPath.getStyleClass().add("sidebar-svg");
+
                 selectedItem.getStyleClass().remove(3);
+                SVGPath path = choosingSvg(selectedItem);
+                path.getStyleClass().remove(0);
                 selectedItem = button;
-                refillingSvg(selectedItem);
             }
         } else {
             button.getStyleClass().add("sidebar-button-selected");
+            SVGPath path = choosingSvg(button);
+            path.getStyleClass().add("sidebar-svg");
             selectedItem = button;
         }
     }
 
-    private void fillingSvg(SVGPath lambdaSvg, Integer position) {
-        Color color = new Color(1, 1, 1, 1);
-        lambdaSvg.setContent(svgImages[position]);
-        lambdaSvg.setFill(color);
+
+    private SVGPath choosingSvg(JFXButton button) {
+        switch (button.getAccessibleText()) {
+            case "svgPresupuestoPath":
+                return svgPresupuesto;
+            case "svgHome":
+                return svgHome;
+            case "svgAlquiler":
+                return svgAlquilar;
+            case "svgArticulos":
+                return svgArticulos;
+            case "svgClientes":
+                return svgClientes;
+            case "svgReportes":
+                return svgReportes;
+            case "svgUsuarios":
+                return svgUsuarios;
+            default:
+                return null;
+        }
     }
 
-    private void refillingSvg(JFXButton selectedItem) {
-        svgAlquilar.setContent(actual.getContent());
-
-    }
 }

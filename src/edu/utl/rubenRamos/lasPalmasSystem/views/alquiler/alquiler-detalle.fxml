@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="753.0" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.alquiler.AlquilerDetalleController">
+    <children>
+        <AnchorPane minHeight="74.0" minWidth="600.0" styleClass="top-panel" stylesheets="@../../static/css/styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="223.0" layoutY="17.806640625" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="176.5" AnchorPane.topAnchor="17.806640625">
+                    <children>
+                        <SVGPath content="M24 2v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2zm1 11.729l.855-.791c1 .484 1.635.852 2.76 1.654 2.113-2.399 3.511-3.616 6.106-5.231l.279.64c-2.141 1.869-3.709 3.949-5.967 7.999-1.393-1.64-2.322-2.686-4.033-4.271z" fill="#f26101" scaleX="1.5" scaleY="1.5">
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </SVGPath>
+                        <Text fill="#f26101" strokeType="OUTSIDE" strokeWidth="0.0" text="Detalle de alquiler">
+                            <font>
+                                <Font name="Roboto Regular" size="25.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="83.0" prefWidth="590.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="83.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="96.0" layoutY="14.0" minHeight="56.0" minWidth="266.0" prefHeight="56.0" prefWidth="399.0" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="14.0">
+                    <children>
+                        <VBox minHeight="56.0" minWidth="22.0" prefHeight="56.0" prefWidth="22.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Inicio alquiler" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Roboto Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                                <JFXDatePicker fx:id="datePickerFechaInicio" defaultColor="#f26101" editable="false" VBox.vgrow="ALWAYS" />
+                            </children>
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox minHeight="56.0" minWidth="10.0" prefHeight="56.0" prefWidth="10.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label text="Fin alquiler" VBox.vgrow="ALWAYS">
+                                    <font>
+                                        <Font name="Roboto Regular" size="13.0" />
+                                    </font>
+                                </Label>
+                                <JFXDatePicker fx:id="datePickerFechaFin" defaultColor="#f26101" editable="false" VBox.vgrow="ALWAYS" />
+                            </children>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox layoutY="99.0" prefHeight="44.0" prefWidth="304.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <children>
+                        <JFXTextField fx:id="txtNombreCliente" editable="false" focusColor="#F26101" labelFloat="true" prefHeight="29.0" prefWidth="177.0" promptText="Nombre cliente" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDireccionParticular" editable="false" focusColor="#F26101" labelFloat="true" prefHeight="29.0" prefWidth="177.0" promptText="Dirección particular" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="15.0" />
+                            </HBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtTelefono" editable="false" focusColor="#F26101" labelFloat="true" prefHeight="29.0" prefWidth="177.0" promptText="Teléfono" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutY="168.0" prefHeight="44.0" prefWidth="304.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <children>
+                        <JFXTextField fx:id="txtDireccionEntrega" focusColor="#F26101" labelFloat="true" prefHeight="26.0" prefWidth="150.0" promptText="Dirección de entrega *" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <HBox layoutY="229.0" prefHeight="44.0" prefWidth="304.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <children>
+                        <JFXTextField fx:id="txtFlete" focusColor="#F26101" labelFloat="true" prefHeight="26.0" prefWidth="150.0" promptText="Flete" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtDescuento" focusColor="#F26101" labelFloat="true" prefHeight="26.0" prefWidth="150.0" promptText="Descuento" unFocusColor="#8AA8B0" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets left="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Roboto Regular" size="15.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </HBox>
+                <JFXTextArea fx:id="txtNotas" focusColor="#f26101" labelFloat="true" layoutX="6.0" layoutY="295.0" prefHeight="74.0" prefWidth="580.0" promptText="Notas - Hora de entrega, comentarios, indicaciones, etc..." unFocusColor="#8aa8b0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="5.0" layoutY="547.0" prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #DEDEDE;" stylesheets="@../../static/css/styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <Text layoutX="23.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total : $">
+                    <font>
+                        <Font name="Roboto Regular" size="20.0" />
+                    </font>
+                </Text>
+                <Text fx:id="txtMonto" layoutX="106.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="555" wrappingWidth="221.779296875">
+                    <font>
+                        <Font name="Roboto Regular" size="20.0" />
+                    </font>
+                </Text>
+                <Group layoutX="444.0" layoutY="3.0" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="14.0">
+                    <children>
+                        <JFXButton fx:id="btnAlquilar" buttonType="RAISED" layoutX="15.0" layoutY="11.0" prefHeight="29.0" prefWidth="112.0" ripplerFill="#e1e1e1" styleClass="confirm-button" stylesheets="@../../static/css/buttons.css" text="Alquilar" textFill="WHITE">
+                            <padding>
+                                <Insets left="25.0" />
+                            </padding>
+                        </JFXButton>
+                        <SVGPath content="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="WHITE" layoutX="22.0" layoutY="13.0" />
+                    </children>
+                </Group>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="460.0" prefHeight="226.0" prefWidth="590.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="460.0">
+            <columns>
+                <TableColumn fx:id="columnArticulo" prefWidth="75.0" text="Artículo" />
+                <TableColumn fx:id="columnGrupoArt" prefWidth="75.0" text="Grupo artículo" />
+                <TableColumn fx:id="columnForma" prefWidth="107.0" text="Forma" />
+                <TableColumn fx:id="columnCantidad" prefWidth="128.0" text="Cantidad" />
+                <TableColumn fx:id="columnPrecio" prefWidth="75.0" text="Precio unitario" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

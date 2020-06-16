@@ -6,7 +6,6 @@
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.Group?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -174,16 +173,17 @@
                               </HBox>
                            </children>
                         </VBox>
-                        <Group layoutX="159.0" layoutY="3.0" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="0.0">
-                           <children>
-                              <JFXButton buttonType="RAISED" layoutX="15.0" layoutY="11.0" prefHeight="29.0" prefWidth="112.0" ripplerFill="RED" styleClass="create-button" stylesheets="@../../static/css/buttons.css" text="Confirmar" textFill="WHITE">
-                                 <padding>
-                                    <Insets left="25.0" />
-                                 </padding>
-                              </JFXButton>
-                              <SVGPath content="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="WHITE" layoutX="22.0" layoutY="13.0" />
-                           </children>
-                        </Group>
+                        <JFXButton fx:id="btnDetalles" alignment="BASELINE_LEFT" buttonType="RAISED" contentDisplay="TOP" graphicTextGap="0.0" layoutX="82.0" layoutY="23.0" prefHeight="35.0" prefWidth="91.0" ripplerFill="#e1e1e1" styleClass="create-button" stylesheets="@../../static/css/buttons.css" text="Detalle" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="10.0">
+                           <padding>
+                              <Insets left="25.0" />
+                           </padding>
+                           <graphic>
+                              <SVGPath content="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 3c-2.21 0-4 1.791-4 4s1.79 4 4 4c2.209 0 4-1.791 4-4s-1.791-4-4-4zm-.004 3.999c-.564.564-1.479.564-2.044 0s-.565-1.48 0-2.044c.564-.564 1.479-.564 2.044 0s.565 1.479 0 2.044z" fill="WHITE" />
+                           </graphic>
+                           <font>
+                              <Font name="Roboto Regular" size="13.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </AnchorPane>
                     </children>

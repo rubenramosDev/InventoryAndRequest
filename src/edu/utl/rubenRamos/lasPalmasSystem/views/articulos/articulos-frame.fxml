@@ -32,7 +32,7 @@
         </AnchorPane>
     </top>
    <center>
-      <JFXTabPane BorderPane.alignment="CENTER">
+      <JFXTabPane stylesheets="@../../static/css/tab.css" BorderPane.alignment="CENTER">
          <tabs>
             <Tab fx:id="tabArticulos" text="Artículos">
               <content>

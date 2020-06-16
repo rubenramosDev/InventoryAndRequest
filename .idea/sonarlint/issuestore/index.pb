@@ -19,10 +19,6 @@ r
 Bsrc/edu/utl/rubenRamos/lasPalmasSystem/views/usuarios/usuario.fxml,4/a/4a5888b19dec6067094834d159b712b918ef62e5
 x
 Hsrc/edu/utl/rubenRamos/lasPalmasSystem/views/usuarios/usuario-frame.fxml,b/5/b5d5e1905e897fe5cdc891eb2683becc9715b1ff
-{
-Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/frame-articulos.fxml,0/6/0688e7ea7a7f6bf33dada63e4fdc46cd6dc213f7
-{
-Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/grupo-articulos.fxml,d/6/d6afb1f343b2f09fabff7bfdd9fa830e26f02d8c
 q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/ClienteDao.java,b/c/bcce2a9c9d388266b28f5d1bbeea4c6e3bef18fe
 q
@@ -49,10 +45,6 @@ w
 Gsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/JDBCConnection.java,6/8/68752f4df4cf7a42da098d9af587be17fc284117
 z
 Jsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/CategoriaArticulo.java,1/3/13a4d583194a6cf27c5a49b042428b4b4b13cd49
-Ñ
-Tsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/tasks/ArticuloServiceTask.java,1/9/19fb8e6f2525e68760797152461270e92aec4d43
-Ö
-Usrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/tasks/ArticuloTableService.java,f/c/fc2087169ec6526a1cdac223426c08449f2f2834
 y
 Isrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/ClienteService.java,0/d/0dfd1904e40ef44030393182c3de230cc82e92ca
 y
@@ -109,8 +101,6 @@ m
 Ksrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/main/MainController.java,7/f/7f7508c565662d7a8a455c5a0bea724deb1edee0
 o
 ?src/edu/utl/rubenRamos/lasPalmasSystem/static/css/list-view.css,5/2/525dd6a9806891dcce18ffca1058ae5ec43e4314
-É
-Ssrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerController.java,f/a/fa1c54eb50ff8747f41c8f0d284804015e7eb021
 à
 Xsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerCrearController.java,a/e/ae5a8a66e472cb85f52464baa7e29034aba9e16d
 w
@@ -119,8 +109,6 @@ r
 Bsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/AlquilerDao.java,4/7/47bce7772b2c79304db5f9bbda06c6127af24872
 Ç
 Rsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/AlquilerArticuloService.java,b/4/b40eddec0e686b20194011ec584e9ea17fdf9625
-è
-_src/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerItemArticuloController.java,b/0/b03ee00e9a669da3372d12cb53c1e930cdbe4dad
 
 Osrc/edu/utl/rubenRamos/lasPalmasSystem/views/alquiler/alquiler-administrar.fxml,c/f/cfb9b9fcba065329bc88ce249b3a7ea6b8095421
 y
@@ -143,3 +131,9 @@ q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/Alquiler.java,c/7/c707b5cbd00dd0d80fd3a9bfbd8c9ab0b4dda334
 y
 Isrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/AlquilerArticulo.java,1/4/1467a3e29453a6c76ce72396f616124f23b28f45
+à
+Xsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerFrameController.java,e/c/ecb1dc3fb21f0a70a79ab22431f27b941a3f2ccc
+{
+Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/alquiler/alquiler-detalle.fxml,a/d/adf058934ae4983bdcd565dbda94f5425daaceab
+ä
+Zsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerDetalleController.java,f/2/f263640d5150c526d5e11d72f16bdf565149abd0

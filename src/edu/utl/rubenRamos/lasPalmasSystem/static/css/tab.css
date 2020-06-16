@@ -17,5 +17,8 @@
     -fx-stroke: #F26101;
     -fx-stroke-width: 10pt;
     -fx-background-color: #FFF;
+}
 
+.jfx-tab-pane {
+    -fx-stroke: #F26101;
 }

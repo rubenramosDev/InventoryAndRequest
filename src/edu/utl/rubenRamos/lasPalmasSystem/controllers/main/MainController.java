@@ -96,7 +96,7 @@ public class MainController implements Initializable {
             public void handle(ActionEvent actionEvent) {
                 try {
                     selectedItem(btnArticulos);
-                    loader("../../views/articulos/frame-articulos.fxml");
+                    loader("../../views/articulos/articulos-frame.fxml");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

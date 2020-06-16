@@ -37,7 +37,7 @@
     <center>
         <JFXTabPane stylesheets="@../../static/css/tab.css" BorderPane.alignment="CENTER">
             <tabs>
-                <Tab fx:id="tabGrupo" styleClass="../static/css/tab.css" text="Nuevo alquiler">
+                <Tab fx:id="tabGrupo" styleClass="../static/css/tab.css" text="Alquilar">
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>

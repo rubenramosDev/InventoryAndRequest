@@ -1,8 +1,5 @@
 package edu.utl.rubenRamos.lasPalmasSystem.entity.model;
 
-import java.util.ArrayList;
-
-
 public class Articulo {
 
     private Integer idArticulo;

@@ -26,7 +26,7 @@ public class ArticuloFrameController implements Initializable {
     private void settingTabsScene() {
         try {
             tabArticulos.setContent(FXMLLoader.load(getClass().getResource("../../views/articulos/articulos.fxml")));
-            tabGrupoArticulos.setContent(FXMLLoader.load(getClass().getResource("../../views/articulos/grupo-articulos.fxml")));
+            tabGrupoArticulos.setContent(FXMLLoader.load(getClass().getResource("../../views/articulos/articulos-grupo.fxml")));
         } catch (IOException e) {
             e.printStackTrace();
         }

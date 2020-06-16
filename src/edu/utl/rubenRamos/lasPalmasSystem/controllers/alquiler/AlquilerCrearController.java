@@ -75,7 +75,8 @@ public class AlquilerCrearController implements Initializable {
     private Text txtDias;
     @FXML
     private JFXButton btnAddUser;
-
+    @FXML
+    private JFXButton btnDetalles;
 
     private Map<Integer, Integer> verify = new HashMap<>();
     private double total = 0.0;
@@ -330,7 +331,11 @@ public class AlquilerCrearController implements Initializable {
 
         });
         btnAddUser.setOnAction(actionEvent -> {
-            addUser();
+            addingUser();
+        });
+
+        btnDetalles.setOnAction(actionEvent -> {
+            checkingUpOrder();
         });
         btnConsultar.setOnAction(actionEvent -> {
             ZoneId defaultZoneId = ZoneId.systemDefault();
@@ -403,7 +408,7 @@ public class AlquilerCrearController implements Initializable {
         });
     }
 
-    private void addUser() {
+    private void addingUser() {
         Parent root;
         try {
             root = FXMLLoader.load(getClass().getResource("../../views/cliente/crear-cliente.fxml"));
@@ -413,6 +418,31 @@ public class AlquilerCrearController implements Initializable {
             });
             stage.setTitle("Agregar nuevo cliente");
             stage.setScene(new Scene(root, 450, 450));
+            stage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void checkingUpOrder() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("../../views/alquiler/alquiler-detalle.fxml"));
+        Parent parent = fxmlLoader.load();
+        Scene scene = new Scene(parent);
+
+        AlquilerDetalleController alquilerDetalleController = fxmlLoader.load();
+        alquilerDetalleController.initData();
+
+
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("../../views/alquiler/alquiler-detalle.fxml"));
+            Stage stage = new Stage();
+            stage.setOnCloseRequest(windowEvent -> {
+                fillingComboBox();
+            });
+            stage.setTitle("Detalle de alquiler");
+            stage.setScene(new Scene(root, 600, 753));
             stage.showAndWait();
         } catch (IOException e) {
             e.printStackTrace();

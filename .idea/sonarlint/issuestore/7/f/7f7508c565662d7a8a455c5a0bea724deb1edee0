@@ -1,23 +1,23 @@
 
-E
-java:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
 e
-java:S2259™"BA "NullPointerException" could be thrown; "path" is nullable here.(×ÈØÉÿÿÿÿÿ8ô”´Æª.
-F
-java:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
-R
-java:S1128
-"5Remove this unused import 'javafx.scene.paint.Color'.(Ïî£à8è˜ÀÅª.
-E
-java:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
-Z
-java:S1068I"8Remove this unused "previousSelectedItem" private field.(â›ˆ²üÿÿÿÿ8“ÀŒÅª.
-h
-java:S2259•"EA "NullPointerException" could be thrown; "newPath" is nullable here.(¿‹Îùÿÿÿÿ8³£²Æª.
+java:S2259Ÿ"BA "NullPointerException" could be thrown; "path" is nullable here.(¼åÂØıÿÿÿÿ8ô”´Æª.
 E
 java:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
 U
 java:S1128"8Remove this unused import 'javafx.scene.shape.FillRule'.(ÆĞ—ú8ìÙÅª.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÖùÖ®ùÿÿÿÿ
 e
-java:S2259Ÿ"BA "NullPointerException" could be thrown; "path" is nullable here.(¼åÂØıÿÿÿÿ8ô”´Æª.
+java:S2259™"BA "NullPointerException" could be thrown; "path" is nullable here.(×ÈØÉÿÿÿÿÿ8ô”´Æª.
+R
+java:S1128
+"5Remove this unused import 'javafx.scene.paint.Color'.(Ïî£à8è˜ÀÅª.
+Z
+java:S1068I"8Remove this unused "previousSelectedItem" private field.(â›ˆ²üÿÿÿÿ8“ÀŒÅª.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÖùÖ®ùÿÿÿÿ
+E
+java:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
+E
+java:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.
+h
+java:S2259•"EA "NullPointerException" could be thrown; "newPath" is nullable here.(¿‹Îùÿÿÿÿ8³£²Æª.
+F
+java:S1148‡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“ÀŒÅª.

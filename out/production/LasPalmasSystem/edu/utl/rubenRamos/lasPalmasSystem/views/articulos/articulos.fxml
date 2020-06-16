@@ -132,15 +132,11 @@
                         </JFXButton>
                     </children>
                 </HBox>
-                <Pane fx:id="paneButtonClean" layoutX="297.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <children>
-                        <ImageView fx:id="btnClean" fitHeight="64.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../static/images/erase.png" />
-                            </image>
-                        </ImageView>
-                    </children>
-                </Pane>
+            <JFXButton fx:id="btnClean" buttonType="RAISED" styleClass="confirm-button" stylesheets="@../../static/css/buttons.css" text="Limpiar" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Roboto Regular" size="13.0" />
+               </font>
+            </JFXButton>
             </children>
             <padding>
                 <Insets left="10.0" right="10.0" />

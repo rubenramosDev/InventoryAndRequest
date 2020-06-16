@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <BorderPane fx:id="borderPaneUsuarios" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.usuario.UsuarioFrameController">
     <top>
-        <AnchorPane prefHeight="80.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <AnchorPane prefHeight="80.0" prefWidth="600.0" styleClass="top-panel" stylesheets="@../../static/css/styles.css" BorderPane.alignment="CENTER">
             <children>
-                <HBox alignment="CENTER" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #f4f5f7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <HBox alignment="CENTER" prefHeight="80.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="42.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../static/images/userlogin.png" />
-                            </image>
-                        </ImageView>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios">
+                  <SVGPath content="M16 2c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6zm0-2c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm-5.405 16.4l-1.472 1.6h-3.123v2h-2v2h-2v-2.179l5.903-5.976c-.404-.559-.754-1.158-1.038-1.795l-6.865 6.95v5h6v-2h2v-2h2l2.451-2.663c-.655-.249-1.276-.562-1.856-.937zm7.405-11.4c.551 0 1 .449 1 1s-.449 1-1 1-1-.449-1-1 .449-1 1-1zm0-1c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" fill="#f26101" scaleX="1.5" scaleY="1.5" />
+                        <Text fill="#f26101" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios">
                             <font>
                                 <Font name="Roboto Regular" size="25.0" />
                             </font>

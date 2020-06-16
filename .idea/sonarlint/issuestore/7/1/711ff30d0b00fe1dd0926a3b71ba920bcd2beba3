@@ -1,9 +1,19 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷”Æ¿
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
-f
-java:S1192"KDefine a constant instead of duplicating this literal "SQLState: " 3 times.(×¨¯‰ıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ8¡©ÅÉ«.
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(“ùÿíüÿÿÿÿ8ÿ§ÃÉ«.
+H
+java:S1168"+Return an empty collection instead of null.(¥¹ï8¡©ÅÉ«.
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ8àşÅÉ«.
 g
-java:S1192"LDefine a constant instead of duplicating this literal " Menssage: " 3 times.(×¨¯‰ıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+java:S1192"LDefine a constant instead of duplicating this literal " Menssage: " 5 times.(×¨¯‰ıÿÿÿÿ
+H
+java:S1168 "+Return an empty collection instead of null.(¥¹ï8àşÅÉ«.
+f
+java:S1192"KDefine a constant instead of duplicating this literal "SQLState: " 5 times.(×¨¯‰ıÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(×¨¯‰ıÿÿÿÿ
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ŒÖÈ¢ıÿÿÿÿ8àşÅÉ«.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(÷”Æ¿

@@ -1,4 +1,3 @@
 
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ëÕÞÄ
-X
-java:S2094"BRemove this empty class, write its code or make it an "interface".(¸¹‘®
+l	java:S116"XRename this field "EstatusPedido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤»Ï

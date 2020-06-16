@@ -29,8 +29,6 @@ q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/UsuarioDao.java,7/a/7a9b97e8422e5b72f8eee3d43eff90ba890bb442
 r
 Bsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/ArticuloDao.java,9/9/997f03489cb478e0a05abdfb8e387ff9e2c3c207
-r
-Bsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/ProductoDao.java,6/5/65edc16c7848e5d17eef435ae6a211d070547c3e
 w
 Gsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/EstatusPedidoDao.java,2/1/21016b93ca9f675bd289b8eacb9e3eabd6812343
 x
@@ -45,8 +43,6 @@ q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/Articulo.java,8/6/862d1073ba85a11ed966d1875429466a6e8a9946
 q
 Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/Faltante.java,d/b/db0368a90771d9fbb78ba63aa13ae2ec3f62e599
-q
-Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/Producto.java,7/e/7e9ace9d5e67a6cd8a1e20064c381b1103afc1a5
 t
 Dsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/UserSession.java,8/d/8d964b2c4657adf1cb688279f91a196a471ee954
 w
@@ -63,8 +59,6 @@ y
 Isrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/UsuarioService.java,0/a/0aecacc9059695b24e072ea504959160d26d2a71
 z
 Jsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/ArticuloService.java,7/1/711ff30d0b00fe1dd0926a3b71ba920bcd2beba3
-z
-Jsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/ProductoService.java,7/c/7c31d943917d9f134cb88b2e1395ddad17be3701
 É
 Ssrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/CategoriaArticuloService.java,0/8/082d0a5cc5d8b951c8fa339fb729cbc49a10fbab
 v
@@ -73,8 +67,6 @@ v
 Fsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/interfaces/IUsuario.java,a/9/a9a82e2cc6471dbd805473ff42cb9d4f64fdbf33
 w
 Gsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/interfaces/IArticulo.java,4/5/45da555357fbc0622c75162eca1707c963f3a7d4
-w
-Gsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/interfaces/IProducto.java,5/1/51b69ff0995759a85096139fb1f1f70a9236d7be
 |
 Lsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/interfaces/IEstatusPedido.java,7/1/718375fdeab81c264cfc01c4013c0553dcd981b5
 }
@@ -121,16 +113,12 @@ o
 Ssrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerController.java,f/a/fa1c54eb50ff8747f41c8f0d284804015e7eb021
 à
 Xsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerCrearController.java,a/e/ae5a8a66e472cb85f52464baa7e29034aba9e16d
-z
-Jsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/alquiler/Alquiler.java,b/c/bcb40ebd53c5bb232d85cf78e0cf848388fd84da
 w
 Gsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/interfaces/IAlquiler.java,7/f/7fc1dc3ec7a7d2d9f3084708d514fc83647d779a
 r
 Bsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/dao/AlquilerDao.java,4/7/47bce7772b2c79304db5f9bbda06c6127af24872
 Ç
 Rsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/service/AlquilerArticuloService.java,b/4/b40eddec0e686b20194011ec584e9ea17fdf9625
-Å
-Qsrc/edu/utl/rubenRamos/lasPalmasSystem/views/alquiler/alquiler-item-articulo.fxml,2/5/2510e76624544943d69575fc55a5beea682912e1
 è
 _src/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerItemArticuloController.java,b/0/b03ee00e9a669da3372d12cb53c1e930cdbe4dad
 
@@ -149,3 +137,9 @@ w
 Gsrc/edu/utl/rubenRamos/lasPalmasSystem/views/cliente/crear-cliente.fxml,3/0/30c068baec78afc8b14483c6a10f8050aee4897e
 Ü
 Vsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/cliente/ClienteCrearController.java,0/e/0e9427a6ff9ff26766228f5f3e3b5c4c133eeb96
+x
+Hsrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/EstatusAlquiler.java,e/0/e0084267fd12a5ea42c1a9da4b85c377dfcd04bb
+q
+Asrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/Alquiler.java,c/7/c707b5cbd00dd0d80fd3a9bfbd8c9ab0b4dda334
+y
+Isrc/edu/utl/rubenRamos/lasPalmasSystem/entity/model/AlquilerArticulo.java,1/4/1467a3e29453a6c76ce72396f616124f23b28f45

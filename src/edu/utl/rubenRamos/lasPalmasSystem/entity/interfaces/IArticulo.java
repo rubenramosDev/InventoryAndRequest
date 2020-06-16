@@ -10,6 +10,10 @@ public interface IArticulo {
 
     public ArrayList<Articulo> getByDate(Date dateInicio, Date dateFin) throws SQLException;
 
+    public ArrayList<Articulo> getAllArticulos() throws SQLException;
+
+    public ArrayList<Articulo> getAllAvailableArticulos() throws SQLException;
+
     public Boolean createArticulo(Articulo articulo) throws SQLException;
 
     public Boolean updateArticulo(Articulo articulo) throws SQLException;

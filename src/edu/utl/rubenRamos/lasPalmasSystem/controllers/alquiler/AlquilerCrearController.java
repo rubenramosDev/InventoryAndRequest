@@ -5,7 +5,6 @@ import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.CategoriaArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Cliente;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.service.ClienteService;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.service.tasks.ArticuloTableService;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.Validators;
 import javafx.fxml.FXML;
@@ -81,8 +80,6 @@ public class AlquilerCrearController implements Initializable {
     private Map<Integer, Integer> verify = new HashMap<>();
     private double total = 0.0;
     private Integer dias = 0;
-
-    private ArticuloTableService articuloTableService = new ArticuloTableService();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

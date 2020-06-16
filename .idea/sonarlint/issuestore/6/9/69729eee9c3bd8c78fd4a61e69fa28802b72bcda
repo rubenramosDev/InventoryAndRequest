@@ -1,33 +1,33 @@
 
-c
-java:S1192‡"LDefine a constant instead of duplicating this literal "information" 3 times.(Û¦•¬
-o
-java:S1192"SDefine a constant instead of duplicating this literal "Campo obligatorio." 5 times.(¾³¥õıÿÿÿÿ
-d
-java:S1192‡"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(Û¦•¬
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³¦ÁN
-:
-java:S1148‹"#Use a logger to log this exception.(á…Ğ†
-:
-java:S1148ã"#Use a logger to log this exception.(òçøì
 F
 java:S5411†"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
-F
-java:S5411œ"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
-A
-java:S5411Ö"*Use the primitive boolean expression here.(¤°Û÷
-t	java:S1164"_Rename this field "JFXtogleButtonActivo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£»¿é
-h
-java:S3776w"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Ô”ã‡
-C
-java:S1602°",Remove useless curly braces around statement( ¾ƒ€
-H
-java:S1602³",Remove useless curly braces around statement(–èîøÿÿÿÿ
-Y
-java:S1126Ö"BReplace this if-then-else statement by a single method invocation.(¤°Û÷
+c
+java:S1192‡"LDefine a constant instead of duplicating this literal "information" 3 times.(Û¦•¬
 p
 java:S2293è"YReplace the type specification in this constructor call with the diamond operator ("<>").(ø³¯´
 C
 java:S1602ê",Remove useless curly braces around statement(í¾ì°
+C
+java:S1602°",Remove useless curly braces around statement( ¾ƒ€
+H
+java:S1602³",Remove useless curly braces around statement(–èîøÿÿÿÿ
+d
+java:S1192‡"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(Û¦•¬
+F
+java:S5411œ"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+o
+java:S1192"SDefine a constant instead of duplicating this literal "Campo obligatorio." 5 times.(¾³¥õıÿÿÿÿ
+:
+java:S1148ã"#Use a logger to log this exception.(òçøì
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³¦ÁN
+h
+java:S3776w"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Ô”ã‡
+Y
+java:S1126Ö"BReplace this if-then-else statement by a single method invocation.(¤°Û÷
+A
+java:S5411Ö"*Use the primitive boolean expression here.(¤°Û÷
+t	java:S1164"_Rename this field "JFXtogleButtonActivo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£»¿é
+:
+java:S1148‹"#Use a logger to log this exception.(á…Ğ†
 X
 java:S1126ô"AReplace this if-then-else statement by a single return statement.(ÀèâĞ

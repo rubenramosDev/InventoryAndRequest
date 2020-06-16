@@ -6,11 +6,33 @@ import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 
 public class ArticuloService {
 
     private IArticulo articuloDao = new ArticuloDao();
+
+    public ArrayList<Articulo> getAllArticulos() {
+        try {
+            return articuloDao.getAllArticulos();
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
+            return null;
+        }
+    }
+
+    public ArrayList<Articulo> getAllAvailableArticulos() {
+        try {
+            return articuloDao.getAllAvailableArticulos();
+        } catch (SQLException exception) {
+            ContextualWindow.contextualWindowException(exception);
+            System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
+            return null;
+        }
+    }
+
 
     public Boolean createArticulo(String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, Integer idCategoria, String pathImage) {
         try {

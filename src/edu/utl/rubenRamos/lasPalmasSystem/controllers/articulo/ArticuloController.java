@@ -1,28 +1,32 @@
 package edu.utl.rubenRamos.lasPalmasSystem.controllers.articulo;
 
-import com.jfoenix.controls.*;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXComboBox;
+import com.jfoenix.controls.JFXTextField;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.CategoriaArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.service.ArticuloService;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.service.CategoriaArticuloService;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.service.tasks.ArticuloTableService;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.*;
-
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
-import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-
+import javafx.scene.control.SingleSelectionModel;
+import javafx.scene.control.SplitPane;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.util.StringConverter;
 
 import java.net.URL;
@@ -48,7 +52,7 @@ public class ArticuloController implements Initializable {
     @FXML
     private JFXButton btnDelete;
     @FXML
-    private ImageView btnClean;
+    private JFXButton btnClean;
     @FXML
     private JFXButton btnUpdate;
     @FXML
@@ -80,14 +84,14 @@ public class ArticuloController implements Initializable {
     private TableColumn<CategoriaArticulo, String> tableColumCategoria;
     @FXML
     private TableColumn<CategoriaArticulo, String> tableColumForma;
-    @FXML
-    private Pane paneButtonClean;
 
     private String imagePath = " ";
     private List<JFXTextField> fields = new ArrayList<>();
-    private ArticuloTableService articuloTableService = new ArticuloTableService();
     private ArticuloService articuloService = new ArticuloService();
     private Integer idSelectedItem;
+    private ArrayList<Articulo> articuloList;
+    private ObservableList<Articulo> observableList = null;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -95,6 +99,7 @@ public class ArticuloController implements Initializable {
     }
 
     private void initData() {
+        articuloList = new ArrayList<>();
         ArrayList<JFXTextField> listDoubles = new ArrayList<>();
         listDoubles.add(txtPrecioFaltante);
         listDoubles.add(txtPrecioUnitario);
@@ -102,6 +107,8 @@ public class ArticuloController implements Initializable {
         addingListeners();
         settingTable();
         fetchingDataTable();
+        filteringData();
+        selectedItem();
         addingTooltips();
 
         Validators.intValitador(txtCantidad);
@@ -241,26 +248,33 @@ public class ArticuloController implements Initializable {
     }
 
     private void filteringData() {
-        FilteredList<Articulo> filteredData = new FilteredList<>(articuloTableService.valueProperty().get(), articuloResult -> true);
+        FilteredList<Articulo> filteredData = new FilteredList<Articulo>(FXCollections.observableArrayList(articuloList), cliente -> true);
 
         textFieldSearch.textProperty().addListener(((observableValue, oldValue, newValue) -> {
-            filteredData.setPredicate(art -> {
+            filteredData.setPredicate(articulo -> {
                 if (newValue == null || newValue.isEmpty()) {
                     return true;
                 }
                 String lowerCaseFilter = newValue.toLowerCase();
-                if (art.getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                if (articulo.getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1) {
                     return true;
-                } else if (art.getCategoriaArticulo().getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                } else if (articulo.getCategoriaArticuloFormaTable().toLowerCase().indexOf(lowerCaseFilter) != -1) {
                     return true;
-                } else if (String.valueOf(art.getCantidad()).indexOf(lowerCaseFilter) != -1) {
+                } else if (String.valueOf(articulo.getPrecioFaltante()).indexOf(lowerCaseFilter) != -1) {
                     return true;
-                } else if (String.valueOf(art.getPrecioFaltante()).indexOf(lowerCaseFilter) != -1) {
+                } else if (String.valueOf(articulo.getPrecioUnitario()).indexOf(lowerCaseFilter) != -1) {
                     return true;
-                } else if (String.valueOf(art.getPrecioUnitario()).indexOf(lowerCaseFilter) != -1)
+                } else if (String.valueOf(articulo.getCantidad()).indexOf(lowerCaseFilter) != -1) {
                     return true;
-                else
+                } else if (String.valueOf(articulo.getIdArticulo()).indexOf(lowerCaseFilter) != -1) {
+                    return true;
+                } else if (articulo.getCategoriaArticuloFormaTable().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                    return true;
+                } else if (articulo.getCategoriaArticulo().getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1) {
+                    return true;
+                } else {
                     return false;
+                }
             });
         }));
         SortedList<Articulo> sortedData = new SortedList<>(filteredData);
@@ -269,29 +283,10 @@ public class ArticuloController implements Initializable {
     }
 
     private void fetchingDataTable() {
-        Region veil = new Region();
-        ProgressBar progressBar = new ProgressBar();
-
-        veil.setStyle("-fx-background-color:rgba(0,0,0,0.4)");
-        veil.setPrefHeight(400);
-        veil.setPrefWidth(300);
-
-        progressBar.progressProperty().bind(articuloTableService.progressProperty());
-        veil.visibleProperty().bind(articuloTableService.runningProperty());
-        progressBar.visibleProperty().bind(articuloTableService.runningProperty());
-
-        tableView.itemsProperty().bind(articuloTableService.valueProperty());
-
-        stackPane.getChildren().addAll(veil, progressBar);
-        articuloTableService.start();
-        articuloTableService.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
-            @Override
-            public void handle(WorkerStateEvent workerStateEvent) {
-                tableView.itemsProperty().unbind();
-                filteringData();
-                selectedItem();
-            }
-        });
+        articuloList = articuloService.getAllArticulos();
+        observableList = FXCollections.observableArrayList(articuloList);
+        tableView.setItems(observableList);
+        tableView.refresh();
     }
 
     private void cleaningFields() {
@@ -303,7 +298,9 @@ public class ArticuloController implements Initializable {
         txtPrecioFaltante.setText("");
         txtPrecioUnitario.setText("");
         ImageLoader.loadFromPath("", pane);
-        articuloTableService.restart();
+        observableList.clear();
+        fetchingDataTable();
+        filteringData();
     }
 
     private void addingTooltips() {

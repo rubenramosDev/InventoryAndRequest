@@ -1,24 +1,24 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æÃÕ›úÿÿÿÿ
-o
-java:S1192ì"SDefine a constant instead of duplicating this literal "Campo obligatorio." 5 times.(¾³¥õıÿÿÿÿ
-¡
-java:S1862Ï"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(³îúÿÿÿÿÿÿ
+C
+java:S1602¿",Remove useless curly braces around statement(í¾ì°
 :
 java:S1148¸"#Use a logger to log this exception.(òçøì
-F
-java:S5411…"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+¡
+java:S1862Ï"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(³îúÿÿÿÿÿÿ
+o
+java:S1192ì"SDefine a constant instead of duplicating this literal "Campo obligatorio." 5 times.(¾³¥õıÿÿÿÿ
 ]
 java:S1126Ñ"AReplace this if-then-else statement by a single return statement.(ğìó¾üÿÿÿÿ
 o
 java:S1128"RRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.ButtonsLogic'.(ö“€–8 äşØ¨.
 E
 java:S5411n"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+F
+java:S5411…"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æÃÕ›úÿÿÿÿ
 9
 java:S1148s"#Use a logger to log this exception.(á…Ğ†
-C
-java:S1602",Remove useless curly braces around statement( ¾ƒ€
 p
 java:S2293½"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸éèÜ
 C
-java:S1602¿",Remove useless curly braces around statement(í¾ì°
+java:S1602",Remove useless curly braces around statement( ¾ƒ€

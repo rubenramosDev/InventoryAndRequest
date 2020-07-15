@@ -21,9 +21,9 @@ public class CategoriaArticuloService {
         }
     }
 
-    public Boolean createCategoriaArticulo(String nombreCategoriaArticulo, String forma) {
+    public Boolean createCategoriaArticulo(String nombreCategoriaArticulo) {
         try {
-            return categoriaArticuloDao.createCategoriaArticulo(new CategoriaArticulo(nombreCategoriaArticulo, forma));
+            return categoriaArticuloDao.createCategoriaArticulo(new CategoriaArticulo(nombreCategoriaArticulo));
         } catch (SQLException exception) {
             ContextualWindow.contextualWindowException(exception);
             System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));
@@ -31,9 +31,9 @@ public class CategoriaArticuloService {
         }
     }
 
-    public Boolean updateCategoriaArticulo(String nombre, Integer idCategoriaArticulo, String forma) {
+    public Boolean updateCategoriaArticulo(String nombre, Integer idCategoriaArticulo) {
         try {
-            return categoriaArticuloDao.updateCategoriaArticulo(new CategoriaArticulo(idCategoriaArticulo, nombre, forma));
+            return categoriaArticuloDao.updateCategoriaArticulo(new CategoriaArticulo(idCategoriaArticulo, nombre));
         } catch (SQLException exception) {
             ContextualWindow.contextualWindowException(exception);
             System.out.println("SQLState: ".concat(exception.getSQLState()).concat(" Menssage: ").concat(exception.getMessage()));

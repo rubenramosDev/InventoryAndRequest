@@ -1,28 +1,22 @@
 
-c
-java:S1192¢"LDefine a constant instead of duplicating this literal "information" 3 times.(§Ì‹Í
+j
+java:S1192Ÿ"LDefine a constant instead of duplicating this literal "information" 3 times.(§Ì‹Í8‡ı¤™µ.
 w
-java:S2293û"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡‹”ì8¿²ÙÉ«.
-d
-java:S1192¢"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(§Ì‹Í
-^
-java:S1126‘"AReplace this if-then-else statement by a single return statement.(äĞÿ/8ßÙåÉ«.
+java:S2293ö"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡‹”ì8¿²ÙÉ«.
+k
+java:S1192Ÿ"MDefine a constant instead of duplicating this literal "InformaciÃ³n" 3 times.(§Ì‹Í8‡ı¤™µ.
 F
-java:S5411¡"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
-£
-java:S1862"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(±®¿š8óªçÉ«.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦şÿÿÿÿ
-i
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ô”ã‡
-:
-java:S1148¦"#Use a logger to log this exception.(á…Ğ†
+java:S5411±"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+M
+java:S5411"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8‡ı¤™µ.
 C
-java:S1602Î",Remove useless curly braces around statement(¬³Ùİ
-:
-java:S1148ë"#Use a logger to log this exception.(òçøì
-F
-java:S5411´"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+java:S1602Ë",Remove useless curly braces around statement(¬³Ùİ
 J
-java:S1602ı",Remove useless curly braces around statement(í¾ì°8¿²ÙÉ«.
-[
-java:S1128"9Remove this unused import 'javafx.scene.image.ImageView'.(áÿ®Ãüÿÿÿÿ8 ê¨Ê«.
+java:S1602÷",Remove useless curly braces around statement(í¾ì°8¿²ÙÉ«.
+^
+java:S1126‹"AReplace this if-then-else statement by a single return statement.(äĞÿ/8ßÙåÉ«.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦şÿÿÿÿ
+£
+java:S1862‰"„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(±®¿š8âÚ™Ÿµ.
+p
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ô”ã‡8‡ı¤™µ.

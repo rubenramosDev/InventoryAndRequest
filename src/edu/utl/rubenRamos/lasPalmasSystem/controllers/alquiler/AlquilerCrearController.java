@@ -38,9 +38,8 @@ public class AlquilerCrearController implements Initializable {
      * TODO TENGO QUE AGREGAR LAS FECHA DEL PEDIDO A LA RESERVACION, PARA CALCULAR EL MONTO TOTAL TAMBIEN !!!!!!!!
      *  SOLAMENTE ESTOY HACIENDO EL CALCULO POR UN DÍA
      *  */
-
     @FXML
-    private JFXComboBox<String> comboCliente;
+    private SplitPane splitPane;
     @FXML
     private JFXDatePicker datePickerFechaInicio;
     @FXML
@@ -74,13 +73,14 @@ public class AlquilerCrearController implements Initializable {
     @FXML
     private Text txtDias;
     @FXML
-    private JFXButton btnAddUser;
-    @FXML
     private JFXButton btnDetalles;
 
     private Map<Integer, Integer> verify = new HashMap<>();
     private double total = 0.0;
     private Integer dias = 0;
+    private ArrayList<Articulo> selectedItems = new ArrayList<>();
+    private Map<Integer, Integer> nombreCliente = new HashMap<>();
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -91,7 +91,6 @@ public class AlquilerCrearController implements Initializable {
         settingTable();
         addingButtonsToTable();
         settingUpCalendars();
-        fillingComboBox();
         addingListeners();
     }
 
@@ -104,43 +103,15 @@ public class AlquilerCrearController implements Initializable {
         tableColumForma.setCellValueFactory(new PropertyValueFactory<>("categoriaArticuloFormaTable"));
     }
 
-    private void fillingComboBox() {
-        ClienteService clienteService = new ClienteService();
-        ArrayList<Cliente> clientes = clienteService.getAllCliente();
-        ArrayList<String> names = new ArrayList<>();
+    private void creatingItem(Integer idArticulo, String nombre, Double costo, Integer disponibles, Double precioUnitario, Integer index) throws IOException {
+        Articulo articulo = new Articulo(idArticulo, nombre, precioUnitario, 0);
+        selectedItems.add(articulo);
 
-        comboCliente.getItems().addAll(names);
-        comboCliente.getSelectionModel().select(0);
-
-        for (Cliente cliente : clientes) {
-            names.add(cliente.getNombre().concat(" ").concat(cliente.getApellido()));
-        }
-
-        JFXAutoCompletePopup<String> autoCompletePopup = new JFXAutoCompletePopup<>();
-        autoCompletePopup.getSuggestions().addAll(names);
-
-        autoCompletePopup.setSelectionHandler(event -> {
-            comboCliente.setValue(event.getObject());
-        });
-
-        TextField editor = comboCliente.getEditor();
-        editor.textProperty().addListener(observable -> {
-            autoCompletePopup.filter(item -> item.toLowerCase().contains(editor.getText().toLowerCase()));
-            //Hide the autocomplete popup if the filtered suggestions is empty or when the box's original popup is open
-            if (autoCompletePopup.getFilteredSuggestions().isEmpty() || comboCliente.showingProperty().get()) {
-                autoCompletePopup.hide();
-            } else {
-                autoCompletePopup.show(editor);
-            }
-        });
-    }
-
-    private void creatingItem(Integer id, String nombre, Double costo, Integer disponibles, Double precioUnitario, Integer index) throws IOException {
         String font = "Roboto";
         Map<AnchorPane, Integer> colum = new HashMap<>();
         AtomicReference<Integer> auxCantidadEscrita = new AtomicReference<>(0);
         AtomicReference<Integer> auxDias = new AtomicReference<>(0);
-        verify.put(id, id);
+        verify.put(idArticulo, idArticulo);
 
         /*Setting items*/
         AnchorPane anchorPane = new AnchorPane();
@@ -231,9 +202,10 @@ public class AlquilerCrearController implements Initializable {
         /*Listeners*/
         buttonDelete.setOnMouseClicked(mouseEvent -> {
             listView.getItems().remove(anchorPane);
-            verify.remove(id);
+            verify.remove(idArticulo);
             total = total - ((auxCantidadEscrita.get() * precioUnitario) * auxDias.get());
             txtTotal.setText(String.valueOf(total));
+            selectedItems.remove(articulo);
         });
 
         buttonConfirmar.setOnMouseClicked(mouseEvent -> {
@@ -247,6 +219,8 @@ public class AlquilerCrearController implements Initializable {
                     ContextualWindow.contextualWindow("warning", anchorLeft, "La cantidad mínima es 1.", "Advertencia");
                     txtFieldCantidad.setText(String.valueOf(0));
                 } else {
+                    articulo.setCantidad(cantidadEscrita);
+                    selectedItems.add(articulo);
                     double subtotalDouble = (cantidadEscrita * precioUnitario) * dias;
                     auxCantidadEscrita.set(cantidadEscrita);
                     auxDias.set(dias);
@@ -330,12 +304,12 @@ public class AlquilerCrearController implements Initializable {
         datePickerFechaFin.setOnAction(actionEvent -> {
 
         });
-        btnAddUser.setOnAction(actionEvent -> {
-            addingUser();
-        });
-
         btnDetalles.setOnAction(actionEvent -> {
-            checkingUpOrder();
+            try {
+                checkingUpOrder();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
         btnConsultar.setOnAction(actionEvent -> {
             ZoneId defaultZoneId = ZoneId.systemDefault();
@@ -408,21 +382,6 @@ public class AlquilerCrearController implements Initializable {
         });
     }
 
-    private void addingUser() {
-        Parent root;
-        try {
-            root = FXMLLoader.load(getClass().getResource("../../views/cliente/crear-cliente.fxml"));
-            Stage stage = new Stage();
-            stage.setOnCloseRequest(windowEvent -> {
-                fillingComboBox();
-            });
-            stage.setTitle("Agregar nuevo cliente");
-            stage.setScene(new Scene(root, 450, 450));
-            stage.showAndWait();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     private void checkingUpOrder() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
@@ -430,23 +389,11 @@ public class AlquilerCrearController implements Initializable {
         Parent parent = fxmlLoader.load();
         Scene scene = new Scene(parent);
 
-        AlquilerDetalleController alquilerDetalleController = fxmlLoader.load();
-        alquilerDetalleController.initData();
-
-
-        Parent root;
-        try {
-            root = FXMLLoader.load(getClass().getResource("../../views/alquiler/alquiler-detalle.fxml"));
-            Stage stage = new Stage();
-            stage.setOnCloseRequest(windowEvent -> {
-                fillingComboBox();
-            });
-            stage.setTitle("Detalle de alquiler");
-            stage.setScene(new Scene(root, 600, 753));
-            stage.showAndWait();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        AlquilerDetalleController alquilerDetalleController = fxmlLoader.getController();
+        alquilerDetalleController.initData(selectedItems, datePickerFechaInicio.getValue(), datePickerFechaFin.getValue());
+        Stage stage = (Stage) (splitPane.getScene().getWindow());
+        stage.setScene(scene);
+        stage.show();
     }
 
     private void checkingUpDates(Date fechaInicio, Date fechFin) {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXTextField?>
@@ -20,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<SplitPane dividerPositions="0.5" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.alquiler.AlquilerCrearController">
+<SplitPane fx:id="splitPane" dividerPositions="0.5" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utl.rubenRamos.lasPalmasSystem.controllers.alquiler.AlquilerCrearController">
     <items>
         <StackPane fx:id="stackPane">
             <children>
@@ -65,19 +64,6 @@
         </StackPane>
         <AnchorPane fx:id="anchorLeft" minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="299.0" style="-fx-background-color: #fff;">
             <children>
-            <HBox layoutX="20.0" layoutY="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
-               <children>
-                      <JFXComboBox fx:id="comboCliente" editable="true" focusColor="#f26101" labelFloat="true" minHeight="29.0" minWidth="210.0" prefHeight="29.0" prefWidth="210.0" promptText="Cliente" unFocusColor="#8aa8b0" />
-                  <JFXButton fx:id="btnAddUser" ripplerFill="#f26101" text=" ">
-                     <graphic>
-                        <SVGPath content="M9.602 3.7c-1.154 1.937-.635 5.227 1.424 9.025.93 1.712.697 3.02.338 3.815-.982 2.178-3.675 2.799-6.525 3.456-1.964.454-1.839.87-1.839 4.004h-1.995l-.005-1.241c0-2.52.199-3.975 3.178-4.663 3.365-.777 6.688-1.473 5.09-4.418-4.733-8.729-1.35-13.678 3.732-13.678 3.321 0 5.97 2.117 5.97 6.167 0 3.555-1.949 6.833-2.383 7.833h-2.115c.392-1.536 2.499-4.366 2.499-7.842 0-5.153-5.867-4.985-7.369-2.458zm13.398 15.3h-3v-3h-2v3h-3v2h3v3h2v-3h3v-2z" fill="#8aa8b0" />
-                     </graphic>
-                     <HBox.margin>
-                        <Insets left="9.0" />
-                     </HBox.margin>
-                  </JFXButton>
-               </children>
-            </HBox>
                 <VBox alignment="CENTER" fillWidth="false" layoutY="168.0" minHeight="86.0" minWidth="250.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="70.0">
                     <children>
                         <HBox alignment="CENTER" minHeight="56.0" minWidth="266.0" VBox.vgrow="ALWAYS">

@@ -1,18 +1,18 @@
 
-j
-java:S20954"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-j
-java:S2095H"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
-b
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®À¢•øÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž£âæ
-L
-java:S1128	"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:
 R
 java:S1128
 "<Remove this unused import 'javafx.scene.control.ButtonType'.(úêÿ»
+j
+java:S20953"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ž£âæ
 J
 java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ
+j
+java:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(€÷ñ¬þÿÿÿÿ
+L
+java:S1128	"7Remove this unused import 'javafx.scene.control.Alert'.(ÊÇê:
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(®À¢•øÿÿÿÿ
 A
-java:S1168'"+Return an empty collection instead of null.(¥¹ï
-S	java:S106S"9Replace this use of System.out or System.err by a logger.(×¨¯‰ýÿÿÿÿ
+java:S1168&"+Return an empty collection instead of null.(¥¹ï

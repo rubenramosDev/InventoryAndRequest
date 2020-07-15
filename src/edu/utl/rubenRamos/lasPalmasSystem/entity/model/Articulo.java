@@ -16,18 +16,25 @@ public class Articulo {
     public Articulo() {
     }
 
+    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Integer cantidad) {
+        this.idArticulo = idArticulo;
+        this.nombre = nombre;
+        this.precioUnitario = precioUnitario;
+        this.cantidad = cantidad;
+    }
+
     public Articulo(Integer idArticulo) {
         this.idArticulo = idArticulo;
     }
 
-    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoria, String nombreCategoria, String forma) {
+    public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoria, String nombreCategoria) {
         this.idArticulo = idArticulo;
         this.nombre = nombre;
         this.precioUnitario = precioUnitario;
         this.precioFaltante = precioFaltante;
         this.cantidad = cantidad;
         this.pathImage = pathImage;
-        this.categoriaArticulo = new CategoriaArticulo(idCategoria, nombreCategoria, forma);
+        this.categoriaArticulo = new CategoriaArticulo(idCategoria, nombreCategoria);
     }
 
     public Articulo(Integer idArticulo, String nombre, Double precioUnitario, Double precioFaltante, Integer cantidad, String pathImage, Integer idCategoriaArticulo) {

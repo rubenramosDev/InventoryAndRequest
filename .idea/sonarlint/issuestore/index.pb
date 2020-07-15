@@ -137,3 +137,9 @@ Xsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerFrameContro
 Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/alquiler/alquiler-detalle.fxml,a/d/adf058934ae4983bdcd565dbda94f5425daaceab
 Š
 Zsrc/edu/utl/rubenRamos/lasPalmasSystem/controllers/alquiler/AlquilerDetalleController.java,f/2/f263640d5150c526d5e11d72f16bdf565149abd0
+y
+Isrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/articulos-ham.fxml,f/7/f7c2b03253abfc78ded0e1f6951e7a1e02fe04c7
+u
+Esrc/edu/utl/rubenRamos/lasPalmasSystem/views/cliente/cliente-ham.fxml,b/9/b9a6c0bcaa7f8541bd0e74a1cf6e25ebf880da6b
+{
+Ksrc/edu/utl/rubenRamos/lasPalmasSystem/views/articulos/articulos-grupo.fxml,2/1/21bc9d193e87230f2e0a1588ab1fa4d15868a7f7

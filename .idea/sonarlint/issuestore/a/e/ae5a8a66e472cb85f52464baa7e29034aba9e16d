@@ -1,35 +1,25 @@
 
-F
-java:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8™Ï÷«.
-X
-java:S1141ı"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ÌÆî¡«.
-O
-java:S1602¹",Remove useless curly braces around statement(ÖÍŒ‹ıÿÿÿÿ8™Ï÷«.
+p
+java:S1128"TRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.entity.model.Cliente'.(Æ´ÆK8úÌ¯’¬.
 j
-java:S1192ô"LDefine a constant instead of duplicating this literal "Advertencia" 4 times.(Ï˜º8ÌÆî¡«.
+java:S1192Ø"LDefine a constant instead of duplicating this literal "Advertencia" 4 times.(Ï˜º8Öøô‘¬.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­¬¤Úùÿÿÿÿ
+X
+java:S1141ã"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8Öøô‘¬.
+N
+java:S1068R"1Remove this unused "nombreCliente" private field.(æÙ´Õ8®½œ’¬.
 f
-java:S1192ô"HDefine a constant instead of duplicating this literal "warning" 4 times.(Ï˜º8ÌÆî¡«.
+java:S1192Ø"HDefine a constant instead of duplicating this literal "warning" 4 times.(Ï˜º8Öøô‘¬.
+z
+java:S1128"]Remove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.entity.service.ClienteService'.(›¶÷Ï8®½œ’¬.
 T
 java:S1135&"2Complete the task associated to this TODO comment.(ßôÃøıÿÿÿÿ8ÔÉİ «.
-N
-java:S1602z",Remove useless curly braces around statement(©ÓÙƒüÿÿÿÿ8ÌÆî¡«.
+F
+java:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Öøô‘¬.
+Y	java:S125˜"<This block of commented-out lines of code should be removed.(—ıÁµ8²¦ö‘¬.
 P
-java:S1135Ì"2Complete the task associated to this TODO comment.(õ÷Ö8™Ï÷«.
-H
-java:S1481¯"*Remove this unused "scene" local variable.(÷Âë8”‚úù«.
-F
-java:S1148¸"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÌÆî¡«.
+java:S1135—"2Complete the task associated to this TODO comment.(õ÷Ö8²¦ö‘¬.
 z
-java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8ÌÆî¡«.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­¬¤Úùÿÿÿÿ
-O
-java:S1602Í",Remove useless curly braces around statement(ûï¡•ùÿÿÿÿ8±Ãêù«.
-Y	java:S125Í"<This block of commented-out lines of code should be removed.(—ıÁµ8™Ï÷«.
-O
-java:S1602 ",Remove useless curly braces around statement(ÖÍŒ‹ıÿÿÿÿ8™Ï÷«.
-J
-java:S1602Ñ",Remove useless curly braces around statement(›Ÿ‹”8ŸİÒ÷«.
+java:S1488ƒ"\Immediately return this expression instead of assigning it to the temporary variable "cell".(Ó‡äƒ8Öøô‘¬.
 F
-java:S1148§"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8™Ï÷«.
-W
-java:S1854¯"9Remove this useless assignment to local variable "scene".(÷Âë8”‚úù«.
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Öøô‘¬.

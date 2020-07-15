@@ -2,28 +2,21 @@ package edu.utl.rubenRamos.lasPalmasSystem.controllers.articulo;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
-import edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.model.CategoriaArticulo;
 import edu.utl.rubenRamos.lasPalmasSystem.entity.service.CategoriaArticuloService;
-import edu.utl.rubenRamos.lasPalmasSystem.utils.ButtonsLogic;
 import edu.utl.rubenRamos.lasPalmasSystem.utils.ContextualWindow;
-import edu.utl.rubenRamos.lasPalmasSystem.utils.ImageLoader;
-import edu.utl.rubenRamos.lasPalmasSystem.utils.Validators;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.SplitPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.StackPane;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -43,16 +36,11 @@ public class CategoriaArticuloController implements Initializable {
     @FXML
     private JFXTextField textFieldSearch;
     @FXML
-    private JFXTextField txtForma;
-    @FXML
     private TableView<CategoriaArticulo> tableView;
     @FXML
     private TableColumn<CategoriaArticulo, Integer> tableColumId;
     @FXML
     private TableColumn<CategoriaArticulo, String> tableColumNombre;
-    @FXML
-    private TableColumn<CategoriaArticulo, String> tableColumForma;
-
 
     private CategoriaArticuloService categoriaArticuloService = new CategoriaArticuloService();
     private ArrayList<CategoriaArticulo> categoriaArticulosList = null;
@@ -77,7 +65,7 @@ public class CategoriaArticuloController implements Initializable {
         btnCreate.setOnAction(actionEvent -> {
             if (!txtNombreCategoria.getText().isEmpty()) {
                 try {
-                    Boolean flag = categoriaArticuloService.createCategoriaArticulo(txtNombreCategoria.getText(), txtForma.getText());
+                    Boolean flag = categoriaArticuloService.createCategoriaArticulo(txtNombreCategoria.getText());
                     if (flag) {
                         ContextualWindow.contextualWindow("information", splitPaneArticulos, "La categoría se agregó con éxito.", "Información");
                         cleaningFields();
@@ -91,9 +79,9 @@ public class CategoriaArticuloController implements Initializable {
         });
 
         btnUpdate.setOnAction(actionEvent -> {
-            if (!txtNombreCategoria.getText().isEmpty() && !txtForma.getText().isEmpty()) {
+            if (!txtNombreCategoria.getText().isEmpty()) {
                 try {
-                    Boolean flag = categoriaArticuloService.updateCategoriaArticulo(txtNombreCategoria.getText(), idSelectedCategoriaArticulo, txtForma.getText());
+                    Boolean flag = categoriaArticuloService.updateCategoriaArticulo(txtNombreCategoria.getText(), idSelectedCategoriaArticulo);
                     if (flag) {
                         ContextualWindow.contextualWindow("information", splitPaneArticulos, "La categoría se actualizó con éxito.", "Información");
                         cleaningFields();
@@ -114,7 +102,6 @@ public class CategoriaArticuloController implements Initializable {
     private void settingTable() {
         tableColumId.setCellValueFactory(new PropertyValueFactory<>("idCategoria"));
         tableColumNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
-        tableColumForma.setCellValueFactory(new PropertyValueFactory<>("forma"));
     }
 
     private void selectedItem() {
@@ -126,7 +113,6 @@ public class CategoriaArticuloController implements Initializable {
                     if (tableView.getSelectionModel().getSelectedItem() != null) {
                         idSelectedCategoriaArticulo = categoriaArtSeleccionada.getIdCategoria();
                         txtNombreCategoria.setText(categoriaArtSeleccionada.getNombre());
-                        txtForma.setText((categoriaArtSeleccionada.getForma()));
                         btnUpdate.setDisable(false);
                         btnCreate.setDisable(true);
                     }
@@ -156,8 +142,6 @@ public class CategoriaArticuloController implements Initializable {
                 String lowerCaseFilter = newValue.toLowerCase();
                 if (categoriaArticulo.getNombre().toLowerCase().indexOf(lowerCaseFilter) != -1) {
                     return true;
-                } else if (categoriaArticulo.getForma().toLowerCase().indexOf(lowerCaseFilter) != -1) {
-                    return true;
                 } else
                     return false;
             });
@@ -169,7 +153,6 @@ public class CategoriaArticuloController implements Initializable {
 
     private void cleaningFields() {
         txtNombreCategoria.setText("");
-        txtForma.setText("");
         observableList.clear();
         fetchingDataTable();
         filteringData();

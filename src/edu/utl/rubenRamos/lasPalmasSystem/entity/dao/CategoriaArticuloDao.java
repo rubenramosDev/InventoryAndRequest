@@ -29,8 +29,7 @@ public class CategoriaArticuloDao implements ICategoriaArticulo {
             while (resultSet.next()) {
                 listCategoriaArticulos.add(new CategoriaArticulo(
                         resultSet.getInt(1),
-                        resultSet.getString(2),
-                        resultSet.getString(3)
+                        resultSet.getString(2)
                 ));
             }
             return listCategoriaArticulos;
@@ -47,11 +46,10 @@ public class CategoriaArticuloDao implements ICategoriaArticulo {
     public Boolean createCategoriaArticulo(CategoriaArticulo categoriaArticulo) throws SQLException {
         Connection connection = JDBCConnection.getDBConnection();
         try {
-            String sql = "INSERT INTO categoria_articulos (nombre, forma) VALUES (?,?)";
+            String sql = "INSERT INTO categoria_articulos (nombre) VALUES (?)";
 
             PreparedStatement statement = (PreparedStatement) connection.prepareStatement(sql);
             statement.setString(1, categoriaArticulo.getNombre());
-            statement.setString(2, categoriaArticulo.getForma());
 
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {
@@ -67,12 +65,11 @@ public class CategoriaArticuloDao implements ICategoriaArticulo {
     public Boolean updateCategoriaArticulo(CategoriaArticulo categoriaArticulo) throws SQLException {
         Connection connection = JDBCConnection.getDBConnection();
         try {
-            String sql = "Update categoria_articulos SET nombre=?, forma =? WHERE id_categoria=?";
+            String sql = "Update categoria_articulos SET nombre=? WHERE id_categoria=?";
 
             PreparedStatement statement = (PreparedStatement) connection.prepareStatement(sql);
             statement.setString(1, categoriaArticulo.getNombre());
-            statement.setString(2, categoriaArticulo.getForma());
-            statement.setInt(3, categoriaArticulo.getIdCategoria());
+            statement.setInt(2, categoriaArticulo.getIdCategoria());
 
             int rowsInserted = statement.executeUpdate();
             if (rowsInserted > 0) {

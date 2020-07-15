@@ -1,4 +1,15 @@
 
+t
+java:S1450Q"WRemove the "clientes" field and declare it as a local variable in the relevant methods.(£Â‚ó8ˆ® ’¬.
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­¬¤Úùÿÿÿÿ
+O
+java:S1602‡",Remove useless curly braces around statement(©ÓÙƒüÿÿÿÿ8Ø£’¬.
+F
+java:S1148¤"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‰ÿ ’¬.
 ‘
-java:S1319H"tThe type of the "articulos" object should be an interface such as "List" rather than the implementation "ArrayList".(“ì—¶8µ×Ùù«.
+java:S1319T"tThe type of the "articulos" object should be an interface such as "List" rather than the implementation "ArrayList".(…»À³8µ×Ùù«.
+O
+java:S1602",Remove useless curly braces around statement(ÖÍŒ‹ıÿÿÿÿ8‰ÿ ’¬.
+]	java:S125k"<This block of commented-out lines of code should be removed.(óàîªûÿÿÿÿ8Ñß²’¬.
+M
+java:S1144˜"/Remove this unused private "addingUser" method.(Ã­ä8Ñß²’¬.

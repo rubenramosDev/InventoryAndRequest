@@ -1,37 +1,16 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦şÿÿÿÿ
-9
-java:S1148V"#Use a logger to log this exception.(òçøì
-9
-java:S1148f"#Use a logger to log this exception.(òçøì
-:
-java:S1148‰"#Use a logger to log this exception.(òçøì
-E
-java:S5411Q"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
-E
-java:S5411a"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ
+|
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ş—Ö°ÿÿÿÿÿ8˜ìÜ™µ.
+_
+java:S1126"AReplace this if-then-else statement by a single return statement.(ÑºØş8˜ìÜ™µ.
 L
-java:S1128"6Remove this unused import 'javafx.event.EventHandler'.(º»û˜
-P
-java:S1128":Remove this unused import 'javafx.scene.layout.StackPane'.(™÷èò
-k
-java:S1128"URemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.entity.model.Articulo'.(Ñ¥à„
-g
-java:S1128
-"QRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.ImageLoader'.(‡øÜÿ
-h
-java:S1128"RRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.ButtonsLogic'.(ö“€–
-k
-java:S1128"PRemove this unused import 'edu.utl.rubenRamos.lasPalmasSystem.utils.Validators'.(ŒÉÖäúÿÿÿÿ
-P
-java:S1128"5Remove this unused import 'javafx.event.ActionEvent'.(î•¯¼ıÿÿÿÿ
-h
-java:S3776L"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ô”ã‡
-B
-java:S1602m",Remove useless curly braces around statement( ¾ƒ€
-u
-java:S2293•"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ş—Ö°ÿÿÿÿÿ
-C
-java:S1602—",Remove useless curly braces around statement(í¾ì°
-]
-java:S1126Ÿ"AReplace this if-then-else statement by a single return statement.(Ì„“®ıÿÿÿÿ
+java:S5411E"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8˜ìÜ™µ.
+I
+java:S1602a",Remove useless curly braces around statement( ¾ƒ€8˜ìÜ™µ.
+o
+java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ô”ã‡8˜ìÜ™µ.
+J
+java:S1602‰",Remove useless curly braces around statement(í¾ì°8˜ìÜ™µ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ã„ˆ¦şÿÿÿÿ
+L
+java:S5411U"*Use the primitive boolean expression here.(ıü‡Ìûÿÿÿÿ8˜ìÜ™µ.

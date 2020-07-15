@@ -23,7 +23,6 @@ import javafx.scene.control.SplitPane;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -82,8 +81,6 @@ public class ArticuloController implements Initializable {
     private TableColumn<Articulo, Integer> tableColumCantidad;
     @FXML
     private TableColumn<CategoriaArticulo, String> tableColumCategoria;
-    @FXML
-    private TableColumn<CategoriaArticulo, String> tableColumForma;
 
     private String imagePath = " ";
     private List<JFXTextField> fields = new ArrayList<>();
@@ -243,13 +240,10 @@ public class ArticuloController implements Initializable {
         tableColumPrecioFaltante.setCellValueFactory(new PropertyValueFactory<>("precioFaltante"));
         tableColumCantidad.setCellValueFactory(new PropertyValueFactory<>("cantidad"));
         tableColumCategoria.setCellValueFactory(new PropertyValueFactory<>("categoriArticuloNameTable"));
-        tableColumForma.setCellValueFactory(new PropertyValueFactory<>("categoriaArticuloFormaTable"));
-
     }
 
     private void filteringData() {
         FilteredList<Articulo> filteredData = new FilteredList<Articulo>(FXCollections.observableArrayList(articuloList), cliente -> true);
-
         textFieldSearch.textProperty().addListener(((observableValue, oldValue, newValue) -> {
             filteredData.setPredicate(articulo -> {
                 if (newValue == null || newValue.isEmpty()) {
